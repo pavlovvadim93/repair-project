@@ -3,6 +3,10 @@ body {
   font-family: Museo Sans Cyrl-100, sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   width: 1170px;
   margin: auto;
@@ -70,6 +74,10 @@ body {
 
 .navbar__button {
   margin-left: 30px;
+  text-decoration: none;
+  color: #333333;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .navbar__phone {
