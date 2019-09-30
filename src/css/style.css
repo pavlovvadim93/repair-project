@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: Museo Sans Cyrl-100, sans-serif;
+  font-family: Museo Sans Cyrl-300, sans-serif;
 }
 
 img {
@@ -21,6 +21,13 @@ img {
 @media (max-width: 768px) {
   .container {
     width: 580px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 567px) {
+  .container {
+    width: 320px;
     width: 95%;
   }
 }
@@ -75,17 +82,32 @@ img {
 .navbar__button {
   margin-left: 30px;
   text-decoration: none;
+  font-weight: bold;
   color: #333333;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .navbar__phone {
   display: inline-block;
   color: #333333;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 800;
+  font-weight: bold;
   text-decoration: none;
   margin-top: 9px;
+}
+
+@media (max-width: 567px) {
+  .navbar__contacts {
+    display: none;
+  }
+  .navbar__button {
+    font-size: 10px;
+    padding: 15px 26px;
+  }
+  .navbar__logo {
+    width: 90px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
