@@ -1,0 +1,113 @@
+.offer
+    background: url('../img/offer/offer-bg.png') no-repeat
+    background-position: center right
+    background-size: contain
+    position: relative
+    &::before
+        content: ' '
+        width: 50%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        background-color: #ffffff
+    &-block
+        width: 50%
+        padding-right: 90px
+        position: relative
+        &__title
+            max-width: 360px
+            line-height: 35px
+            margin-bottom: 19px
+        &__subtitle
+            max-width: 250px
+            margin-bottom: 30px
+        &__input
+            margin-bottom: 30px
+            width: 240px
+            &:first-child
+                margin-right: 10px
+        &__button
+            width: 100%
+            min-height: 70px
+            margin-bottom: 26px
+            +bold
+        &__info
+            display: flex
+            justify-content: space-between
+            &-contact
+                display: flex
+                flex-direction: column
+                width:  50%
+                text-align: right
+            &-contacts 
+                font-size: 15px
+                line-height: 24px
+                margin-bottom: 4px
+                padding-right: 8px
+            &-description
+                width:  50%
+                margin-right: 30px
+            &-manager
+                font-size: 15px
+                line-height: 24px
+            &-phone
+                color: $text-color
+                font-size: 15px
+                text-decoration: none
+                padding-right: 68px
+                +bold
+@media (max-width: 1200px)
+    .offer
+        background-size: cover
+        &-block
+            &__input
+                width: 100%
+                margin-bottom: 10px
+            &__button
+                font-size: 13px
+            &__info
+                width: 100%
+                display: inline-block
+                margin-bottom: 18px
+                &-contact
+                    display: inline-block
+                    text-align: left
+                    margin-bottom: 10px
+                    width: 100%
+                &-description
+                    width: 100%
+                &-phone
+                    display: inline-block
+                    padding-right: 0
+                    width: 100%
+@media (max-width: 768px)
+    .offer
+        background: #ffffff
+        &-block
+            width: 100%
+            padding-right: 0
+            &__info
+                width: 100%
+                display: inline-block
+                &-description
+                  margin-bottom: 18px  
+                &-manager
+                    font-size: 15px
+                    line-height: 24px
+                    margin-bottom: 18px
+                &-contact
+                    display: inline-block
+                    text-align: left
+                    width: 100%
+                &-contacts
+                    font-size: 15px
+                    line-height: 24px
+                &-phone
+                    font-size: 15px
+                    line-height: 24px
+                    display: inline-block
+                    margin-top: 10px
+                    padding-right: 0
+                    width: 100%
+        
