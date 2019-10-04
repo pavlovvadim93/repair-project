@@ -67,7 +67,7 @@ img {
 }
 
 .section {
-  padding: 90px 0;
+  padding: 49px 0;
 }
 
 .section-title {
@@ -86,6 +86,18 @@ img {
   padding: 24px 26px;
   font-size: 15px;
   border-radius: 10px;
+  border-color: grey;
+  outline: none;
+}
+
+.input:focus {
+  border-color: orange;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 50px 22px;
+  }
 }
 
 /* Импорт стилей шапки */
@@ -147,14 +159,14 @@ img {
 }
 
 @media (max-width: 567px) {
-  .navbar__contacts {
+  .navbar-block__contacts {
     display: none;
   }
-  .navbar__button {
+  .navbar-block__button {
     font-size: 10px;
     padding: 15px 26px;
   }
-  .navbar__logo {
+  .navbar-block__logo {
     width: 90px;
   }
 }
@@ -172,8 +184,8 @@ img {
 }
 
 .hero-text {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 51%;
+      flex-basis: 51%;
   padding-right: 100px;
 }
 
@@ -253,20 +265,28 @@ img {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 50px 20px;
+  }
   .hero-text__title {
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.4;
     margin-bottom: 15px;
   }
   .hero-text__subtitle {
     font-size: 16px;
+    line-height: 25px;
     margin-bottom: 28px;
-  }
-  .hero-list {
-    font-size: 12px;
   }
   .hero-list__item {
     margin-bottom: 20px;
+  }
+  .hero-list__image {
+    margin-right: 18px;
+  }
+  .hero-list__text {
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 
@@ -409,17 +429,25 @@ img {
     width: 100%;
     padding-right: 0;
   }
+  .offer-block__title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .offer-block__button {
+    font-size: 15px;
+    margin-bottom: 27px;
+  }
   .offer-block__info {
     width: 100%;
     display: inline-block;
   }
   .offer-block__info-description {
-    margin-bottom: 18px;
+    margin-bottom: 10px;
   }
   .offer-block__info-manager {
-    font-size: 15px;
-    line-height: 24px;
-    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 14px;
   }
   .offer-block__info-contact {
     display: inline-block;
@@ -427,14 +455,14 @@ img {
     width: 100%;
   }
   .offer-block__info-contacts {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 24px;
   }
   .offer-block__info-phone {
-    font-size: 15px;
+    font-size: 17px;
     line-height: 24px;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 6px;
     padding-right: 0;
     width: 100%;
   }
