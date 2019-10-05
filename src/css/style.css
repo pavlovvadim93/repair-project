@@ -467,4 +467,89 @@ img {
     width: 100%;
   }
 }
+
+/* Стили модального окна*/
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  position: relative;
+  margin: auto;
+  max-width: 450px;
+  width: 90%;
+  min-width: 200px;
+  background-color: #ffffff;
+  padding: 41px 79px;
+  text-align: center;
+}
+
+.modal-dialog__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.modal-dialog__title {
+  font-size: 17px;
+  line-height: 27px;
+  margin-bottom: 25px;
+  font-family: 'Museo Sans Cyrl Bold', sans-serif;
+  font-weight: 700;
+}
+
+.modal-dialog__subtitle {
+  display: block;
+  font-size: 12px;
+  line-height: 35px;
+  margin-bottom: 26px;
+}
+
+.modal-dialog__input {
+  width: 100%;
+  padding: 13px 26px;
+  font-size: 12px;
+  line-height: 24px;
+  margin-bottom: 11px;
+}
+
+.modal-dialog__button {
+  width: 100%;
+  margin-top: 13px;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: 'Museo Sans Cyrl Bold', sans-serif;
+  font-weight: 700;
+}
+
+.modal-dialog__contacts {
+  display: block;
+  padding: 0px 27px;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 23px;
+}
+
+.modal-dialog__contacts-phone {
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  font-family: 'Museo Sans Cyrl Bold', sans-serif;
+  font-weight: 700;
+  color: #333333;
+  margin-top: 5px;
+}
 /*# sourceMappingURL=style.css.map */
