@@ -532,6 +532,12 @@ img {
   line-height: 18px;
   font-family: 'Museo Sans Cyrl Bold', sans-serif;
   font-weight: 700;
+  border: none;
+}
+
+.modal-dialog__button:hover {
+  background-color: #ffdb33;
+  cursor: pointer;
 }
 
 .modal-dialog__contacts {
