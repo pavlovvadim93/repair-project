@@ -66,23 +66,12 @@ img {
   cursor: pointer;
 }
 
-.back-button {
-  border-radius: 10px;
+.btn {
   background-color: #ffd200;
-  border: none;
-  padding: 14px 25px;
-  margin-left: 20px;
-  margin-bottom: 20px;
+  padding: 18px 30px;
   position: fixed;
   left: 0;
-  bottom: 0;
-  font-family: 'Museo Sans Cyrl Bold', sans-serif;
-  font-weight: 700;
-}
-
-.back-button:hover {
-  background-color: #ffdb33;
-  cursor: pointer;
+  top: 0;
 }
 
 .section {
