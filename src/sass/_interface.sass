@@ -10,9 +10,11 @@ img
 @media (max-width: 1200px)
     .container
         width: 990px
+        padding: 0px 40px
 @media (max-width: 992px)
     .container
         width: 760px
+        padding: 0px
 @media (max-width: 768px)
     .container
         width: 580px
@@ -29,13 +31,17 @@ img
     &:hover
         background-color: lighten($main-color, 10%) 
         cursor: pointer
+@media (max-width: 768px)
+    .button
+        &:hover
+            box-shadow: none
 .back
     &-button
         border-radius: 10px
         background-color: $main-color
         border: none
         padding: 14px 25px
-        margin-left: 20px
+        margin-right: 20px
         margin-bottom: 20px
         position: fixed
         right: 0
@@ -53,6 +59,7 @@ img
     &-title
         font-size: 24px
         +bold
+        text-align: center
     &-subtitle
         font-size: 16px
         display: block
@@ -67,4 +74,8 @@ img
         border-color: orange 
 @media (max-width: 768px)
       .section
-        padding: 50px 22px      
+        padding: 50px 22px
+.arrows
+    &__right, &__left
+        &:hover
+            cursor: pointer      

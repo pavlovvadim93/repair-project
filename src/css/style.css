@@ -37,12 +37,14 @@ img {
 @media (max-width: 1200px) {
   .container {
     width: 990px;
+    padding: 0px 40px;
   }
 }
 
 @media (max-width: 992px) {
   .container {
     width: 760px;
+    padding: 0px;
   }
 }
 
@@ -72,12 +74,19 @@ img {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .button:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
 .back-button {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
   padding: 14px 25px;
-  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 20px;
   position: fixed;
   right: 0;
@@ -105,6 +114,7 @@ img {
   font-size: 24px;
   font-family: 'Museo Sans Cyrl Bold', sans-serif;
   font-weight: 700;
+  text-align: center;
 }
 
 .section-subtitle {
@@ -129,6 +139,10 @@ img {
   .section {
     padding: 50px 22px;
   }
+}
+
+.arrows__right:hover, .arrows__left:hover {
+  cursor: pointer;
 }
 
 /* Импорт стилей шапки */
@@ -189,7 +203,7 @@ img {
   margin-top: 7px;
 }
 
-@media (max-width: 567px) {
+@media (max-width: 600px) {
   .navbar-block__contacts {
     display: none;
   }
@@ -287,11 +301,11 @@ img {
     display: flex;
   }
   .hero-text__title {
-    font-size: 38px;
+    font-size: 34px;
     line-height: 50px;
   }
   .hero-text__subtitle {
-    font-size: 18px;
+    font-size: 16px;
   }
   .hero-list {
     margin-bottom: 44px;
@@ -357,6 +371,7 @@ img {
   background-position: center right;
   background-size: contain;
   position: relative;
+  padding-bottom: 90px;
 }
 
 .offer::before {
@@ -379,6 +394,7 @@ img {
   max-width: 360px;
   line-height: 35px;
   margin-bottom: 19px;
+  text-align: left;
 }
 
 .offer-block__subtitle {
@@ -455,7 +471,7 @@ img {
     background-size: cover;
   }
   .offer-block__input {
-    width: 193px;
+    width: 175px;
     font-size: 14px;
     margin-bottom: 10px;
   }
@@ -472,11 +488,11 @@ img {
     width: 100%;
   }
   .offer-block__info-manager {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 24px;
   }
   .offer-block__info-contacts {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 24px;
   }
   .offer-block__info-description {
@@ -568,6 +584,54 @@ img {
   }
 }
 
+/* Стили для блока портфолио*/
+.portfolio {
+  background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
+  background-size: 50%;
+  padding: 90px 0px;
+}
+
+.portfolio__title {
+  font-size: 30px;
+  line-height: 45px;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 95px;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  margin-top: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider__image {
+  margin: auto;
+}
+
+@media (max-width: 567px) {
+  .portfolio {
+    padding: 41px 0px;
+  }
+  .portfolio__title {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+  .portfolio__arrows {
+    margin-top: 45px;
+  }
+  .slider {
+    padding: 0px 20px;
+  }
+}
+
 /* Стили модального окна*/
 .modal {
   position: fixed;
@@ -600,6 +664,10 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.modal-dialog__close:hover {
+  cursor: pointer;
 }
 
 .modal-dialog__title {
@@ -635,11 +703,6 @@ img {
   border: none;
 }
 
-.modal-dialog__button:hover {
-  background-color: #ffdb33;
-  cursor: pointer;
-}
-
 .modal-dialog__contacts {
   display: block;
   padding: 0px 27px;
@@ -662,13 +725,13 @@ img {
 @media (max-width: 567px) {
   .modal-dialog {
     padding: 41px 50px;
-    font-family: 'Museo Sans Cyrl Bold', sans-serif;
-    font-weight: 700;
   }
   .modal-dialog__title {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 15px;
+    font-family: 'Museo Sans Cyrl Bold', sans-serif;
+    font-weight: 700;
   }
   .modal-dialog__subtitle {
     display: block;
