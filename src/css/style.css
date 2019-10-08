@@ -203,6 +203,9 @@ img {
 }
 
 @media (max-width: 600px) {
+  .navbar {
+    padding: 16px 14px;
+  }
   .navbar-block__contacts {
     display: none;
   }
@@ -340,16 +343,16 @@ img {
 
 @media (max-width: 768px) {
   .hero {
-    padding: 50px 20px;
+    padding: 24px 17px 55px 17px;
   }
   .hero-text__title {
-    font-size: 22px;
-    line-height: 1.4;
-    margin-bottom: 15px;
+    font-size: 23px;
+    line-height: 1.3;
+    margin-bottom: 8px;
   }
   .hero-text__subtitle {
     font-size: 16px;
-    line-height: 25px;
+    line-height: 20px;
     margin-bottom: 28px;
   }
   .hero-list__item {
@@ -539,14 +542,24 @@ img {
 @media (max-width: 768px) {
   .offer {
     background: #ffffff;
+    padding: 30px 18px 21px 13px;
   }
   .offer-block {
     width: 100%;
     padding-right: 0;
   }
   .offer-block__title {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 19px;
+    line-height: 22px;
+    margin-bottom: 14px;
+  }
+  .offer-block__subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 22px;
+  }
+  .offer-block__input {
+    margin-bottom: 8px;
   }
   .offer-block__button {
     font-size: 15px;
@@ -557,27 +570,29 @@ img {
     display: inline-block;
   }
   .offer-block__info-description {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
+    padding-left: 5px;
   }
   .offer-block__info-manager {
-    font-size: 16px;
-    line-height: 26px;
-    margin-bottom: 14px;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 10px;
   }
   .offer-block__info-contact {
     display: inline-block;
     text-align: left;
     width: 100%;
+    padding-left: 5px;
   }
   .offer-block__info-contacts {
     font-size: 16px;
     line-height: 24px;
   }
   .offer-block__info-phone {
-    font-size: 17px;
+    font-size: 15px;
     line-height: 24px;
     display: inline-block;
-    margin-top: 6px;
+    margin-top: 2px;
     padding-right: 0;
     width: 100%;
   }
@@ -587,15 +602,26 @@ img {
 .portfolio {
   background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
   background-size: 50%;
-  padding: 90px 0px;
+  padding: 94px 0px;
 }
 
 .portfolio__title {
+  display: block;
+  font-size: 30px;
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.portfolio__subtitle {
+  display: block;
   font-size: 30px;
   line-height: 45px;
-  max-width: 600px;
+  max-width: 790px;
+  font-family: 'Museo Sans Cyrl Bold', sans-serif;
+  font-weight: 700;
   margin: auto;
-  margin-bottom: 95px;
+  margin-bottom: 90px;
 }
 
 .portfolio__arrows {
@@ -610,24 +636,33 @@ img {
           justify-content: space-between;
 }
 
-.slider__image {
+.slider {
   margin: auto;
 }
 
 @media (max-width: 567px) {
   .portfolio {
-    padding: 41px 0px;
+    padding: 40px 0px;
   }
   .portfolio__title {
-    font-size: 17px;
-    line-height: 30px;
+    font-size: 18px;
+    max-width: 300px;
+  }
+  .portfolio__subtitle {
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 90%;
+    font-family: 'Museo Sans Cyrl Bold', sans-serif;
+    font-weight: 700;
+    margin: auto;
     margin-bottom: 40px;
   }
   .portfolio__arrows {
-    margin-top: 45px;
+    margin-top: 44px;
   }
   .slider {
-    padding: 0px 20px;
+    padding: 0px 28px;
   }
 }
 
