@@ -91,6 +91,12 @@ img {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .back-button {
+    display: none;
+  }
+}
+
 .section {
   padding: 49px 0;
 }
