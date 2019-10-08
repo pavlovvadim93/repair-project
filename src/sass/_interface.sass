@@ -9,6 +9,9 @@ img
     margin: auto
 @media (max-width: 1200px)
     .container
+        width: 990px
+@media (max-width: 992px)
+    .container
         width: 760px
 @media (max-width: 768px)
     .container
@@ -26,7 +29,7 @@ img
     &:hover
         background-color: lighten($main-color, 10%) 
         cursor: pointer
-/* .back
+.back
     &-button
         border-radius: 10px
         background-color: $main-color
@@ -35,12 +38,12 @@ img
         margin-left: 20px
         margin-bottom: 20px
         position: fixed
-        left: 0
+        right: 0
         bottom: 0
         +bold
         &:hover
             background-color: lighten($main-color, 10%) 
-            cursor: pointer */
+            cursor: pointer
 .section
     padding: 49px 0
     &-title

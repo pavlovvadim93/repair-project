@@ -36,6 +36,12 @@ img {
 
 @media (max-width: 1200px) {
   .container {
+    width: 990px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
     width: 760px;
   }
 }
@@ -74,7 +80,7 @@ img {
   margin-left: 20px;
   margin-bottom: 20px;
   position: fixed;
-  left: 0;
+  right: 0;
   bottom: 0;
   font-family: 'Museo Sans Cyrl Bold', sans-serif;
   font-weight: 700;
@@ -270,13 +276,43 @@ img {
 
 @media (max-width: 1200px) {
   .hero-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero-text__title {
+    font-size: 38px;
+    line-height: 50px;
+  }
+  .hero-text__subtitle {
+    font-size: 18px;
+  }
+  .hero-list {
+    margin-bottom: 44px;
+  }
+  .hero-text {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .hero-text__title {
+    font-size: 34px;
+  }
+  .hero-text__subtitle {
+    font-size: 18px;
+  }
   .hero-list {
     margin-bottom: 44px;
+  }
+  .hero-image {
+    text-align: center;
   }
   .hero-text {
     padding-right: 10px;
@@ -409,6 +445,45 @@ img {
 }
 
 @media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer-block__input {
+    width: 193px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .offer-block__button {
+    font-size: 13px;
+  }
+  .offer-block__info {
+    margin-bottom: 18px;
+  }
+  .offer-block__info-contact {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .offer-block__info-manager {
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .offer-block__info-contacts {
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .offer-block__info-description {
+    width: 100%;
+  }
+  .offer-block__info-phone {
+    display: inline-block;
+    padding-right: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
   .offer {
     background-size: cover;
   }
@@ -576,5 +651,48 @@ img {
   font-weight: 700;
   color: #333333;
   margin-top: 5px;
+}
+
+@media (max-width: 567px) {
+  .modal-dialog {
+    padding: 41px 50px;
+    font-family: 'Museo Sans Cyrl Bold', sans-serif;
+    font-weight: 700;
+  }
+  .modal-dialog__title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  .modal-dialog__subtitle {
+    display: block;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 14px;
+  }
+  .modal-dialog__input {
+    padding: 10px 26px;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .modal-dialog__input:first-child {
+    margin-bottom: 10px;
+  }
+  .modal-dialog__button {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .modal-dialog__contacts {
+    display: block;
+    padding: 0px 10px;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 20px;
+  }
+  .modal-dialog__contacts-phone {
+    font-size: 17px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
