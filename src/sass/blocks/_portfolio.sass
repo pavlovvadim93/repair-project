@@ -1,7 +1,6 @@
 .portfolio
     background: $secondary url('../img/portfolio/portfolio-pattern.jpg') repeat-y center left
     background-size: 50%
-    padding: 94px 0px
     &-text
         &__title
             display: block
@@ -29,9 +28,22 @@
             outline: none
     &__image 
         margin: auto 
+@media (max-width: 992px)
+    .portfolio 
+       &-text
+            &__title
+                font-size: 27px
+                max-width: 400px
+                margin-bottom: 2px
+            &__subtitle
+                text-align: center
+                font-size: 27px
+                line-height: 22px
+                max-width: 100%
+                +bold
 @media (max-width: 567px)
     .portfolio
-        padding: 40px 0px
+        padding: 40px 0px 60px 0px
         &-text
             &__title
                 font-size: 18px
