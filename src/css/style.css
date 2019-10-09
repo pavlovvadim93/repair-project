@@ -265,7 +265,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 }
 
 .hero-list__item:last-child {
@@ -276,6 +276,7 @@ img {
   width: 40px;
   height: 40px;
   border: 2px solid #ffd200;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,7 +287,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50%;
-  margin-right: 28px;
+  margin-right: 30px;
 }
 
 .hero-list__text {
@@ -343,27 +344,30 @@ img {
 
 @media (max-width: 768px) {
   .hero {
-    padding: 24px 17px 55px 17px;
+    padding: 24px 2px 40px 17px;
   }
   .hero-text__title {
-    font-size: 23px;
-    line-height: 1.3;
+    font-size: 24px;
+    line-height: 28px;
     margin-bottom: 8px;
   }
   .hero-text__subtitle {
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
   }
   .hero-list__item {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
   .hero-list__image {
-    margin-right: 18px;
+    margin-right: 14px;
   }
   .hero-list__text {
     font-size: 12px;
-    line-height: 16px;
+    line-height: 15px;
+  }
+  .hero-image {
+    margin-top: -8px;
   }
 }
 
@@ -549,9 +553,9 @@ img {
     padding-right: 0;
   }
   .offer-block__title {
-    font-size: 19px;
-    line-height: 22px;
-    margin-bottom: 14px;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 15px;
   }
   .offer-block__subtitle {
     font-size: 14px;
@@ -563,20 +567,20 @@ img {
   }
   .offer-block__button {
     font-size: 15px;
-    margin-bottom: 27px;
+    margin-bottom: 23px;
   }
   .offer-block__info {
     width: 100%;
     display: inline-block;
   }
   .offer-block__info-description {
-    margin-bottom: 7px;
+    margin-bottom: 5px;
     padding-left: 5px;
   }
   .offer-block__info-manager {
     font-size: 15px;
     line-height: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
   }
   .offer-block__info-contact {
     display: inline-block;
@@ -605,7 +609,7 @@ img {
   padding: 94px 0px;
 }
 
-.portfolio__title {
+.portfolio-text__title {
   display: block;
   font-size: 30px;
   max-width: 400px;
@@ -613,7 +617,7 @@ img {
   margin-bottom: 5px;
 }
 
-.portfolio__subtitle {
+.portfolio-text__subtitle {
   display: block;
   font-size: 30px;
   line-height: 45px;
@@ -636,7 +640,11 @@ img {
           justify-content: space-between;
 }
 
-.slider {
+.slider__item:focus {
+  outline: none;
+}
+
+.slider__image {
   margin: auto;
 }
 
@@ -644,11 +652,12 @@ img {
   .portfolio {
     padding: 40px 0px;
   }
-  .portfolio__title {
+  .portfolio-text__title {
     font-size: 18px;
     max-width: 300px;
+    margin-bottom: 2px;
   }
-  .portfolio__subtitle {
+  .portfolio-text__subtitle {
     text-align: center;
     font-size: 18px;
     line-height: 22px;
