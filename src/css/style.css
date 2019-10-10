@@ -344,11 +344,15 @@ img {
   }
   .hero-text__title {
     font-size: 34px;
+    line-height: 25px;
     margin-bottom: 10px;
+    text-align: center;
   }
   .hero-text__subtitle {
     font-size: 18px;
     margin-bottom: 10px;
+    display: block;
+    text-align: center;
   }
   .hero-list {
     max-width: 100%;
@@ -375,7 +379,7 @@ img {
     padding: 24px 15px 40px 17px;
   }
   .hero-text__title {
-    font-size: 24px;
+    font-size: 29px;
     line-height: 28px;
     margin-bottom: 8px;
   }
@@ -405,6 +409,13 @@ img {
 @media (max-width: 567px) {
   .hero {
     padding: 24px 2px 40px 17px;
+  }
+  .hero-text__title {
+    font-size: 24px;
+    text-align: left;
+  }
+  .hero-text__subtitle {
+    text-align: left;
   }
   .hero-list {
     padding: 0px 0px;
