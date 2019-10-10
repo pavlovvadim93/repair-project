@@ -27,7 +27,20 @@
        &:focus
             outline: none
     &__image 
-        margin: auto 
+        margin: auto
+        position: relative
+        width: 370px
+        height: 280px
+        overflow: hidden 
+        & img
+            position: absolute
+            left: 0%
+            top: 0%
+            height: 100%
+            width: auto
+            -webkit-transform: translate(-50%,-50%)
+            -ms-transform: translate(-50%,-50%)
+            transform: translate(-50%,-50%)
 @media (max-width: 992px)
     .portfolio 
        &-text

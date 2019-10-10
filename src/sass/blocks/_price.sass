@@ -37,6 +37,19 @@
             transition: 0.2s
     &__img
         display: block
+        position: relative
+        width: 370px
+        height: 260px
+        overflow: hidden 
+        & img
+            position: absolute
+            left: 0%
+            top: 0%
+            height: 100%
+            width: auto
+            -webkit-transform: translate(-50%,-50%)
+            -ms-transform: translate(-50%,-50%)
+            transform: translate(-50%,-50%)
     &__link
         display: inline-block
         +bold
