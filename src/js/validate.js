@@ -1,5 +1,7 @@
 /* Форма блока offer*/
 $('#offer-form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
     rules: {
         username: {
             required: true,
@@ -48,6 +50,8 @@ $('#modal-form').validate({
 
 /* Форма блока бриф */
 $('#brif-form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
     rules: {
         username: {
             required: true,
