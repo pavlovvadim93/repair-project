@@ -145,6 +145,12 @@ img {
   cursor: pointer;
 }
 
+.invalid {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /* Импорт стилей шапки */
 .navbar {
   padding: 6px 0;
@@ -1080,6 +1086,10 @@ img {
 
 .brif__form {
   margin-top: 20px;
+}
+
+.brif__box {
+  position: relative;
 }
 
 .brif__input {
