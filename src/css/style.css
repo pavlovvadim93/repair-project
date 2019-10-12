@@ -145,10 +145,57 @@ img {
   cursor: pointer;
 }
 
-.invalid {
+#brif-name-error {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 24px;
+  right: 30px;
+  color: red;
+}
+
+#brif-phone-error {
+  position: absolute;
+  top: 24px;
+  right: 30px;
+  color: red;
+}
+
+#brif-email-error {
+  position: absolute;
+  top: 24px;
+  right: 30px;
+  color: red;
+}
+
+#offer-name-error {
+  position: absolute;
+  top: 50px;
+  left: 15px;
+  font-size: 14px;
+  color: red;
+}
+
+#offer-phone-error {
+  position: absolute;
+  top: 50px;
+  right: 60px;
+  font-size: 14px;
+  color: red;
+}
+
+#modal-name-error {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  font-size: 14px;
+  color: red;
+}
+
+#modal-phone-error {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  font-size: 14px;
+  color: red;
 }
 
 /* Импорт стилей шапки */
@@ -460,6 +507,10 @@ img {
   position: relative;
 }
 
+.offer-block__window {
+  position: relative;
+}
+
 .offer-block__title {
   max-width: 360px;
   line-height: 35px;
@@ -539,6 +590,9 @@ img {
 @media (max-width: 1200px) {
   .offer {
     background-size: cover;
+  }
+  .offer-block__window {
+    position: relative;
   }
   .offer-block__input {
     width: 175px;
@@ -1088,7 +1142,7 @@ img {
   margin-top: 20px;
 }
 
-.brif__box {
+.brif__window {
   position: relative;
 }
 
@@ -1525,6 +1579,10 @@ img {
   background-color: #ffffff;
   padding: 41px 79px;
   text-align: center;
+}
+
+.modal-dialog__window {
+  position: relative;
 }
 
 .modal-dialog__close {
