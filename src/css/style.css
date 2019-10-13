@@ -1230,7 +1230,7 @@ img {
 
 @media (max-width: 567px) {
   .info {
-    padding: 55px 0px 50px 0px;
+    padding: 55px 0px 10px 0px;
   }
   .info-description {
     margin-right: auto;
@@ -1317,6 +1317,9 @@ img {
 
 @media (max-width: 992px) {
   .contracts {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1325,9 +1328,32 @@ img {
 }
 
 @media (max-width: 567px) {
+  .guarantee {
+    padding: 17px 0px 40px 0px;
+  }
   .guarantee__title {
-    font-size: 15px;
-    line-height: 45px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 50px;
+  }
+  .contracts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contract__box {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .contract__text {
+    width: 310px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 26px;
+    margin-bottom: 45px;
   }
 }
 
