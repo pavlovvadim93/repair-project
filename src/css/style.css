@@ -1068,7 +1068,7 @@ img {
 }
 
 .steps {
-  padding: 29px 0px 50px 0;
+  padding: 29px 0px 92px 0;
 }
 
 .steps__title {
@@ -1134,6 +1134,200 @@ img {
     font-size: 14px;
     line-height: 45px;
     margin-bottom: 18px;
+  }
+}
+
+/* Стили для блока информация о ремонте */
+.info {
+  background: url("../img/info/info-bg.png") repeat-x;
+  background-size: 100%, fixed;
+  padding: 60px 0px 50px 0px;
+}
+
+.info__title {
+  width: 100%;
+  max-width: 930px;
+  font-size: 32px;
+  line-height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 195px;
+  text-align: center;
+}
+
+.info-description {
+  width: 100%;
+  max-width: 370px;
+  height: 410px;
+  background-color: #f5f5f5;
+  padding-top: 4px;
+  position: relative;
+}
+
+.descriptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.description__title {
+  width: 320px;
+  font-size: 16px;
+  line-height: 23px;
+  padding-left: 26px;
+}
+
+.description__text {
+  font-family: 'Museo Sans Cyrl Bold', sans-serif;
+  font-weight: 700;
+}
+
+.description__image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: 16px;
+}
+
+@media (max-width: 1200px) {
+  .info-description {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .descriptions {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .info {
+    padding: 70px 0px 50px 0px;
+    background-size: 20%, fixed;
+  }
+  .info__title {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 145px;
+  }
+  .info-description {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .descriptions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 567px) {
+  .info {
+    padding: 55px 0px 50px 0px;
+  }
+  .info-description {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    max-width: 330px;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+  .info__title {
+    width: 90%;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 145px;
+  }
+  .description__title {
+    width: 240px;
+    font-size: 12px;
+    line-height: 18px;
+    padding-left: 18px;
+  }
+}
+
+/* Стили для блока гарантия и договор */
+.guarantee {
+  padding: 58px 0px 210px 0px;
+}
+
+.guarantee__contact {
+  background-color: #f5f5f5;
+}
+
+.guarantee__title {
+  width: 100%;
+  max-width: 650px;
+  font-family: 'Museo Sans Cyrl Bold', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 30px;
+  line-height: 45px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 92px;
+}
+
+.contracts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contract__box {
+  background-color: #f5f5f5;
+  width: 270px;
+  height: 360px;
+  padding: 20px 20px 20px 25px;
+  margin-left: 57px;
+  margin-right: 69px;
+}
+
+.contract__frame {
+  background-color: #ffffff;
+  padding: 10px;
+  width: 220px;
+  height: 310px;
+}
+
+.contract__image {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contract__text {
+  width: 390px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 36px;
+}
+
+@media (max-width: 992px) {
+  .contracts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 567px) {
+  .guarantee__title {
+    font-size: 15px;
+    line-height: 45px;
   }
 }
 
