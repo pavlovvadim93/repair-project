@@ -3,6 +3,7 @@
     background-position: center right
     background-size: contain
     position: relative
+    padding-top: 58px
     padding-bottom: 90px
     &::before
         content: ' '
@@ -119,15 +120,23 @@
 @media (max-width: 768px)
     .offer
         background: #ffffff
-        padding: 30px 18px 21px 13px
+        padding: 34px 15px 21px 13px
         &-block
             width: 100%
             padding-right: 0
+            &__form
+               width: 70% 
+               margin-left: auto
+               margin-right: auto
             &__title
+                text-align: center
+                max-width: 600px
                 font-size: 18px
                 line-height: 21px
-                margin-bottom: 15px
+                margin-bottom: 16px
             &__subtitle
+                text-align: center
+                max-width: 600px
                 font-size: 14px
                 line-height: 20px
                 margin-bottom: 22px
@@ -139,6 +148,9 @@
             &__info
                 width: 100%
                 display: inline-block
+                text-align: center
+                margin-left: auto
+                margin-right: auto
                 &-description
                     margin-bottom: 5px
                     padding-left: 5px  
@@ -152,13 +164,42 @@
                     width: 100%
                     padding-left: 5px  
                 &-contacts
+                    display: block
+                    text-align: center
+                    margin-left: auto
+                    margin-right: auto
                     font-size: 16px
                     line-height: 24px
                 &-phone
+                    text-align: center
                     font-size: 15px
                     line-height: 24px
                     display: inline-block
                     margin-top: 2px
                     padding-right: 0
                     width: 100%
-        
+@media (max-width: 532px)
+    .offer
+        &-block
+            &__title 
+                text-align: left 
+                line-height: 22px
+            &__subtitle
+                text-align: left 
+                max-width: 250px
+                font-size: 14px
+                line-height: 19px
+                margin-bottom: 24px
+            &__form
+               width: 100%
+            &__info
+                text-align: left
+                &-contact
+                    display: inline-block
+                    text-align: left
+                    width: 100%
+                    padding-left: 5px  
+                &-contacts
+                    text-align: left 
+                &-phone
+                    text-align: left 

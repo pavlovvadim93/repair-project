@@ -1,6 +1,7 @@
 .portfolio
     background: $secondary url('../img/portfolio/portfolio-pattern.jpg') repeat-y center left
     background-size: 50%
+    padding-top: 62px
     &__title
         font-size: 30px
         line-height: 45px
@@ -15,13 +16,15 @@
         display: flex
         justify-content: space-between
 .slider
+    margin-left: -17px
+    margin-right: -12px
     &__item
        &:focus
             outline: none
     &__image 
         margin: auto
         position: relative
-        width: 370px
+        width: 372px
         height: 280px
         overflow: hidden 
         & img
@@ -40,30 +43,21 @@
                 font-size: 27px
                 max-width: 400px
                 margin-bottom: 2px
-            &__subtitle
-                text-align: center
-                font-size: 27px
-                line-height: 22px
-                max-width: 100%
-                +bold
+      
 @media (max-width: 567px)
     .portfolio
-        padding: 40px 0px 60px 0px
-        &-text
-            &__title
-                font-size: 18px
-                max-width: 300px
-                margin-bottom: 2px
-            &__subtitle
-                text-align: center
-                font-size: 18px
-                line-height: 22px
-                max-width: 90%
-                +bold
-                margin: auto
-                margin-bottom: 40px
+        padding: 25px 0px 60px 0px
+        &__title
+            font-size: 18px
+            line-height: 23px
+            max-width: 300px
+            margin-bottom: 38px
         &__arrows
-            margin-top: 44px
+            margin-top: 46px
     .slider
         padding: 0px 28px
+        &__image
+            width: 100%
+            max-width: 246px
+            max-height: 186px
 

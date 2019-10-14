@@ -114,7 +114,7 @@ img {
   font-family: 'Museo Sans Cyrl Bold', sans-serif;
   font-weight: 700;
   text-align: center;
-  max-width: 478px;
+  max-width: 600px;
 }
 
 .section-subtitle {
@@ -311,14 +311,15 @@ img {
 }
 
 .hero-text {
-  -ms-flex-preferred-size: 51%;
-      flex-basis: 51%;
-  padding-right: 100px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-right: 50px;
 }
 
 .hero-text__title {
   font-size: 41px;
   line-height: 55px;
+  margin-left: -5px;
   margin-bottom: 17px;
   font-family: 'Museo Sans Cyrl Bold', sans-serif;
   font-weight: 700;
@@ -327,7 +328,7 @@ img {
 .hero-text__subtitle {
   font-size: 20px;
   line-height: 65px;
-  margin-bottom: 47px;
+  margin-bottom: 48px;
   font-family: 'Museo Sans Cyrl Bold', sans-serif;
   font-weight: 700;
   display: inline-block;
@@ -367,19 +368,21 @@ img {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50%;
-  margin-right: 30px;
+  margin-right: 28px;
 }
 
 .hero-list__text {
   display: block;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 23px;
   max-width: 250px;
 }
 
 .hero-image {
   position: relative;
-  width: 570px;
+  width: 100%;
+  max-width: 630px;
+  height: 490px;
   max-height: 488px;
   min-height: 245px;
   overflow: hidden;
@@ -387,10 +390,11 @@ img {
 
 .hero-image img {
   position: absolute;
-  left: 0%;
+  right: 0%;
   top: 0%;
   height: 100%;
-  width: auto;
+  width: 100%;
+  max-width: 580px;
 }
 
 @media (max-width: 1200px) {
@@ -411,6 +415,10 @@ img {
   }
   .hero-text {
     padding-right: 10px;
+  }
+  .hero-image {
+    width: 100%;
+    max-width: 430px;
   }
 }
 
@@ -445,8 +453,8 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 570px;
-    max-height: 488px;
-    min-height: 488px;
+    max-height: 388px;
+    min-height: 388px;
   }
   .hero-text {
     padding-right: 10px;
@@ -482,29 +490,37 @@ img {
   }
   .hero-image {
     margin-top: -8px;
+    width: 100%;
+    max-width: 420px;
+    min-height: 245px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media (max-width: 567px) {
   .hero {
-    padding: 24px 2px 40px 17px;
+    padding: 28px 2px 52px 18px;
   }
   .hero-text__title {
     font-size: 24px;
     text-align: left;
+    margin-left: 0px;
   }
   .hero-text__subtitle {
     text-align: left;
   }
   .hero-list {
     padding: 0px 0px;
+    margin-bottom: 46px;
   }
   .hero-image {
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
-    min-height: 245px;
+    height: 50%;
+    max-width: 320px;
+    margin-left: -8px;
   }
 }
 
@@ -514,6 +530,7 @@ img {
   background-position: center right;
   background-size: contain;
   position: relative;
+  padding-top: 58px;
   padding-bottom: 90px;
 }
 
@@ -690,18 +707,27 @@ img {
 @media (max-width: 768px) {
   .offer {
     background: #ffffff;
-    padding: 30px 18px 21px 13px;
+    padding: 34px 15px 21px 13px;
   }
   .offer-block {
     width: 100%;
     padding-right: 0;
   }
+  .offer-block__form {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .offer-block__title {
+    text-align: center;
+    max-width: 600px;
     font-size: 18px;
     line-height: 21px;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
   }
   .offer-block__subtitle {
+    text-align: center;
+    max-width: 600px;
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 22px;
@@ -716,6 +742,9 @@ img {
   .offer-block__info {
     width: 100%;
     display: inline-block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   .offer-block__info-description {
     margin-bottom: 5px;
@@ -733,10 +762,15 @@ img {
     padding-left: 5px;
   }
   .offer-block__info-contacts {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 16px;
     line-height: 24px;
   }
   .offer-block__info-phone {
+    text-align: center;
     font-size: 15px;
     line-height: 24px;
     display: inline-block;
@@ -746,10 +780,43 @@ img {
   }
 }
 
+@media (max-width: 532px) {
+  .offer-block__title {
+    text-align: left;
+    line-height: 22px;
+  }
+  .offer-block__subtitle {
+    text-align: left;
+    max-width: 250px;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 24px;
+  }
+  .offer-block__form {
+    width: 100%;
+  }
+  .offer-block__info {
+    text-align: left;
+  }
+  .offer-block__info-contact {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    padding-left: 5px;
+  }
+  .offer-block__info-contacts {
+    text-align: left;
+  }
+  .offer-block__info-phone {
+    text-align: left;
+  }
+}
+
 /* Стили для блока портфолио*/
 .portfolio {
   background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
   background-size: 50%;
+  padding-top: 62px;
 }
 
 .portfolio__title {
@@ -773,6 +840,11 @@ img {
           justify-content: space-between;
 }
 
+.slider {
+  margin-left: -17px;
+  margin-right: -12px;
+}
+
 .slider__item:focus {
   outline: none;
 }
@@ -780,7 +852,7 @@ img {
 .slider__image {
   margin: auto;
   position: relative;
-  width: 370px;
+  width: 372px;
   height: 280px;
   overflow: hidden;
 }
@@ -799,47 +871,39 @@ img {
     max-width: 400px;
     margin-bottom: 2px;
   }
-  .portfolio-text__subtitle {
-    text-align: center;
-    font-size: 27px;
-    line-height: 22px;
-    max-width: 100%;
-    font-family: 'Museo Sans Cyrl Bold', sans-serif;
-    font-weight: 700;
-  }
 }
 
 @media (max-width: 567px) {
   .portfolio {
-    padding: 40px 0px 60px 0px;
+    padding: 25px 0px 60px 0px;
   }
-  .portfolio-text__title {
+  .portfolio__title {
     font-size: 18px;
+    line-height: 23px;
     max-width: 300px;
-    margin-bottom: 2px;
-  }
-  .portfolio-text__subtitle {
-    text-align: center;
-    font-size: 18px;
-    line-height: 22px;
-    max-width: 90%;
-    font-family: 'Museo Sans Cyrl Bold', sans-serif;
-    font-weight: 700;
-    margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
   }
   .portfolio__arrows {
-    margin-top: 44px;
+    margin-top: 46px;
   }
   .slider {
     padding: 0px 28px;
   }
+  .slider__image {
+    width: 100%;
+    max-width: 246px;
+    max-height: 186px;
+  }
 }
 
 /* Стили для блока с ценами*/
+.price {
+  padding-top: 90px;
+}
+
 .price__title {
   margin: auto;
-  margin-bottom: 48px;
+  margin-bottom: 49px;
   font-size: 30px;
   line-height: 45px;
 }
@@ -994,13 +1058,13 @@ img {
 
 @media (max-width: 567px) {
   .price {
-    padding: 38px 16px 14px 16px;
+    padding: 50px 16px 10px 16px;
   }
   .price__title {
     font-size: 18px;
     line-height: 22px;
     max-width: 90%;
-    margin-bottom: 24px;
+    margin-bottom: 26px;
   }
   .price__subtitle {
     font-size: 14px;
@@ -1008,15 +1072,19 @@ img {
     text-align: center;
   }
   .price__card {
-    margin-bottom: 30px;
+    margin-bottom: 38px;
   }
   .card__text {
     font-size: 14px;
-    padding: 27px;
+    padding: 28px;
   }
   .card__title {
     margin-top: 0;
     margin-bottom: 12px;
+  }
+  .card__img {
+    max-width: 271px;
+    max-height: 191px;
   }
 }
 
@@ -1068,7 +1136,7 @@ img {
 }
 
 .steps {
-  padding: 29px 0px 92px 0;
+  padding: 29px 0px 93px 0;
 }
 
 .steps__title {
@@ -1076,7 +1144,7 @@ img {
   font-size: 30px;
   line-height: 45px;
   margin: auto;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
 }
 
 .steps__subtitle {
@@ -1121,19 +1189,28 @@ img {
 
 @media (max-width: 567px) {
   .steps {
-    padding: 14px 0px 50px 0;
+    padding: 10px 0px 46px 0;
   }
   .steps__title {
     font-size: 19px;
-    line-height: 21px;
+    line-height: 23px;
     margin: auto;
-    margin-bottom: 12px;
+    margin-bottom: 9px;
   }
   .steps__subtitle {
     text-align: center;
     font-size: 14px;
     line-height: 45px;
-    margin-bottom: 18px;
+    margin-bottom: 19px;
+  }
+  .step__image {
+    margin-bottom: 25px;
+  }
+  .step__text {
+    font-size: 12px;
+    line-height: 17px;
+    max-width: 160px;
+    margin: auto;
   }
 }
 
@@ -1230,21 +1307,21 @@ img {
 
 @media (max-width: 567px) {
   .info {
-    padding: 55px 0px 10px 0px;
+    padding: 55px 0px 12px 0px;
   }
   .info-description {
     margin-right: auto;
     margin-left: auto;
     width: 90%;
     max-width: 330px;
-    height: 300px;
+    height: 305px;
     margin-bottom: 30px;
   }
   .info__title {
     width: 90%;
     font-size: 18px;
     line-height: 22px;
-    margin-bottom: 145px;
+    margin-bottom: 137px;
   }
   .description__title {
     width: 240px;
@@ -1436,7 +1513,7 @@ img {
 }
 
 .interview {
-  padding-right: 70px;
+  padding-right: 50px;
 }
 
 .interview__title {
@@ -1582,10 +1659,10 @@ img {
 
 @media (max-width: 532px) {
   .brif {
-    padding: 15px 14px 30px 14px;
+    padding: 15px 14px 10px 14px;
   }
   .brif__block {
-    padding-top: 78px;
+    padding-top: 88px;
   }
   .brif__form {
     margin-top: 2px;
@@ -1612,7 +1689,7 @@ img {
   .interview__subtitle {
     width: 60%;
     font-size: 14px;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
   }
   .interview-list__item {
     margin-bottom: 24px;
@@ -1623,6 +1700,7 @@ img {
   }
   .form {
     padding-left: 0px;
+    padding-bottom: 12px;
   }
   .form__heading {
     font-size: 18px;
@@ -1638,7 +1716,7 @@ img {
   .form__description {
     font-size: 14px;
     width: 50%;
-    line-height: 22px;
+    line-height: 23px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1794,13 +1872,13 @@ img {
             flex-direction: column;
   }
   .contacts {
-    padding-left: 15px;
+    padding: 48px 0px 29px 15px;
   }
   .contacts__title {
     text-align: left;
     font-size: 18px;
-    line-height: 20px;
-    margin-bottom: 36px;
+    line-height: 22px;
+    margin-bottom: 34px;
   }
   .contacts-list {
     display: block;
