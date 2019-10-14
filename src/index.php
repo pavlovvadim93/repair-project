@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
+
     <title>Ремонт квартир</title>
 </head>
 <body>
@@ -373,7 +374,7 @@
                                 <input type="text"name="username" class="input brif__input" id="brif-name" placeholder="Ваше имя">
                             </div> 
                             <div class="form brif__window">
-                                <input type="tel"name="phone" class="input brif__input" id="brif-phone" placeholder="Ваш телефон">
+                                <input type="tel"name="userphone" class="input brif__input" id="brif-phone" placeholder="Ваш телефон">
                             </div>
                             <div class="form brif__window">
                                 <input type="email"name="email" class="input brif__input" id="brif-email" placeholder="Ваш email">
@@ -445,7 +446,7 @@
                     <input type="text" name="username" class="input modal-dialog__input" id="modal-name" placeholder="Ваше имя">
                 </div>
                 <div class="form modal-dialog__window">
-                    <input type="tel" name="phone" class="input modal-dialog__input" id="modal-phone" placeholder="Ваш телефон">
+                    <input type="tel" name="userphone" class="input modal-dialog__input" id="modal-phone" placeholder="Ваш телефон">
                 </div>
                 <button class="button modal-dialog__button">Узнать стоимость</button>
             </form>

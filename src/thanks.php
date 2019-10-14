@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/thanks.css">
     <title>Ремонт квартир</title>
 </head>
 <body>
@@ -41,42 +41,20 @@
     </nav>
     <!-- /.navbar -->
     <main>
-        <section class="hero">
+        <section class="thank">
             <div class="container">
-                <div class="hero-block">
-                    <div class="hero-text">
-                        <h1 class="hero-text__title">
+                <div class="thank-block">
+                    <div class="thank-text">
+                        <h1 class="thank-text__title">
                             Спасибо за заявку 
                         </h1>
-                        <span class="hero-text__subtitle">
+                        <span class="thank-text__subtitle">
                             Мы перезвоним через 15 минут
                         </span>
-                        <ul class="hero-list">
-                            <li class="hero-list__item wow fadeInLeft" data-wow-delay="0.3s">
-                                <div class="hero-list__image">
-                                    <img src="img/hero/clock.png" alt="clock">
-                                </div>
-                                <span class="hero-list__text">Точно соблюдаем сроки</span>
-                            </li>
-                            <li class="hero-list__item wow fadeInLeft" data-wow-delay="0.5s">
-                                <div class="hero-list__image">
-                                    <img src="img/hero/calculator.png" alt="calculator">
-                                </div>
-                                <span class="hero-list__text">Рассчитаем смету на работы и материалы в день обращения</span>
-                            </li>
-                            <li class="hero-list__item wow fadeInLeft" data-wow-delay="0.7s">
-                                <div class="hero-list__image">
-                                    <img src="img/hero/paint-board.png" alt="paint-board">
-                                </div>
-                                <span class="hero-list__text">Предложим более 100 вариантов исполнения дизайна Вашего жилья</span>
-                            </li>
-                        </ul>
+                        <div class="btn">
+                            <a href="index.php" class="button thank-block__button" id="button">Вернуться на главную страницу</a>
+                        </div>
                     </div>
-                    <!-- /.hero-text -->
-                    <div class="hero-image">
-                        <img src="img/hero/hero-image.png" alt="План квартиры">
-                    </div>
-                    <!-- /.hero-image -->
                 </div>
                 <!-- /.hero-block -->
             </div>
