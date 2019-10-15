@@ -94,7 +94,7 @@
                     <form action="mail.php" method="POST" class="form offer-block__form" id="offer-form">
                         <div class="form offer-block__window">
                             <input type="text" name="username" class="input offer-block__input wow rollIn" id="offer-name" data-wow-delay="0.2s" placeholder="Ваше имя">
-                            <input type="tel" name="userphone" class="input offer-block__input wow rollIn" id="offer-phone" data-wow-delay="0.4s" placeholder="Ваш телефон">
+                            <input type="tel" name="phone" class="input offer-block__input wow rollIn" id="offer-phone" data-wow-delay="0.4s" placeholder="Ваш телефон">
                         </div>
                         <button class="button offer-block__button wow jackInTheBox" data-wow-delay="0.7s">Получить бесплатный
                             дизайн-проект</button>
@@ -369,12 +369,12 @@
                     <div class="form brif__block">
                         <h3 class="form__heading">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
                         <span class="form__subtitle">Для этого заполните форму ниже</span>
-                        <form class="form brif__form" action="#" id="brif-form">
+                        <form action="mail.php" method="POST" class="form brif__form" id="brif-form">
                             <div class="form brif__window">
                                 <input type="text"name="username" class="input brif__input" id="brif-name" placeholder="Ваше имя">
                             </div> 
                             <div class="form brif__window">
-                                <input type="tel"name="userphone" class="input brif__input" id="brif-phone" placeholder="Ваш телефон">
+                                <input type="tel"name="phone" class="input brif__input" id="brif-phone" placeholder="Ваш телефон">
                             </div>
                             <div class="form brif__window">
                                 <input type="email"name="email" class="input brif__input" id="brif-email" placeholder="Ваш email">
@@ -441,12 +441,12 @@
             <button class="modal-dialog__close" id="close">&times;</button>
             <h2 class="modal-dialog__title">Узнайте точную стоимость ремонта по телефону!</h2>
             <span class="modal-dialog__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
-            <form action="#" class="form modal-dialog__form" id="modal-form">
+            <form action="mail.php" method="POST"  class="form modal-dialog__form" id="modal-form">
                 <div class="form modal-dialog__window">
                     <input type="text" name="username" class="input modal-dialog__input" id="modal-name" placeholder="Ваше имя">
                 </div>
                 <div class="form modal-dialog__window">
-                    <input type="tel" name="userphone" class="input modal-dialog__input" id="modal-phone" placeholder="Ваш телефон">
+                    <input type="tel" name="phone" class="input modal-dialog__input" id="modal-phone" placeholder="Ваш телефон">
                 </div>
                 <button class="button modal-dialog__button">Узнать стоимость</button>
             </form>

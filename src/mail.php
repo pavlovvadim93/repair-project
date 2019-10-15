@@ -5,7 +5,8 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 // Переменные, которые отправляет пользователь
 $userName = $_POST['username'];
-$userPhone = $_POST['userphone'];
+$userPhone = $_POST['phone'];
+$email = $_POST['email'];
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
     $msg = "Форма успешно создана";
@@ -28,7 +29,8 @@ try {
     
     $mail->Subject = 'Новая заявка';
     $mail->Body    = "<b>Имя:</b> $userName <br>
-    <b>Телефон:</b> $userPhone";
+    <b>Телефон:</b> $userPhone <br>
+    <b>Почта:</b> $email";
     // Проверяем отравленность сообщения
     if ($mail->send()) {
         header('Location: thanks.php');

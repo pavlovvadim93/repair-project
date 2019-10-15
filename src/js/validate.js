@@ -8,7 +8,7 @@ $('#offer-form').validate({
             minlength: 3,
             maxlength: 15
         },
-        phone: {
+        userphone: {
             required: true
         }
     },
@@ -18,7 +18,7 @@ $('#offer-form').validate({
             minlength: "Требуется не менее 3 символов!",
             maxlength: "Требуется не более 15 символов!"
         },
-        phone: {
+        userphone: {
             required: "Укажите Ваш телефон"
         }
     }
