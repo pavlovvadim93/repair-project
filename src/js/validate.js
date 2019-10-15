@@ -8,7 +8,7 @@ $('#offer-form').validate({
             minlength: 3,
             maxlength: 15
         },
-        userphone: {
+        phone: {
             required: true
         }
     },
@@ -18,7 +18,7 @@ $('#offer-form').validate({
             minlength: "Требуется не менее 3 символов!",
             maxlength: "Требуется не более 15 символов!"
         },
-        userphone: {
+        phone: {
             required: "Укажите Ваш телефон"
         }
     }
@@ -88,3 +88,54 @@ $("#offer-phone").mask('+7 (999) 999-99-99');
 $("#modal-phone").mask('+7 (999) 999-99-99');
 /* Маска для телефона в блоке brif */
 $("#brif-phone").mask('+7 (999) 999-99-99');
+
+$('#offer-form').on('submit', function name(event) {
+    event.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: $(this).serialize(),
+        success: function (response) {
+            console.log('Прибыли данные: ' + response);
+            $('#offer-form')[0].reset();
+            $(".offer-block__massege").text(response);
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            consol.error(jqXHR + "  " + textstatus);
+        }
+    });
+});
+
+$('#modal-form').on('submit', function name(event) {
+    event.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: $(this).serialize(),
+        success: function (response) {
+            console.log('Прибыли данные: ' + response);
+            $('#modal-form')[0].reset();
+            $(".modal-dialog__massege").text(response);
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            consol.error(jqXHR + "  " + textstatus);
+        }
+    });
+});
+
+$('#brif-form').on('submit', function name(event) {
+    event.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: $(this).serialize(),
+        success: function (response) {
+            console.log('Прибыли данные: ' + response);
+            $('#brif-form')[0].reset();
+            $(".brif__massege").text(response);
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            consol.error(jqXHR + "  " + textstatus);
+        }
+    });
+});

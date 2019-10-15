@@ -166,6 +166,38 @@ img {
   color: red;
 }
 
+#offer-name-error {
+  position: absolute;
+  top: 50px;
+  left: 15px;
+  font-size: 14px;
+  color: red;
+}
+
+#offer-phone-error {
+  position: absolute;
+  top: 50px;
+  right: 60px;
+  font-size: 14px;
+  color: red;
+}
+
+#modal-name-error {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  font-size: 14px;
+  color: red;
+}
+
+#modal-phone-error {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  font-size: 14px;
+  color: red;
+}
+
 @media (max-width: 768px) {
   #brif-name-error {
     left: 60px;
@@ -292,6 +324,11 @@ img {
   .navbar-block__logo {
     width: 90px;
   }
+}
+
+.wow {
+  -webkit-animation-name: "none" !important;
+          animation-name: "none" !important;
 }
 
 /* Стили для главного экрана */
@@ -577,6 +614,15 @@ img {
   margin-bottom: 26px;
   font-family: 'Museo Sans Cyrl Bold', sans-serif;
   font-weight: 700;
+}
+
+.offer-block__massege {
+  text-align: center;
+  font-family: 'Museo Sans Cyrl Bold', sans-serif;
+  font-weight: 700;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
 }
 
 .offer-block__info {
@@ -1491,6 +1537,15 @@ img {
   position: relative;
 }
 
+.brif__massege {
+  text-align: center;
+  font-family: 'Museo Sans Cyrl Bold', sans-serif;
+  font-weight: 700;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+
 .brif__input {
   width: 100%;
   max-width: 370px;
@@ -1972,6 +2027,17 @@ img {
   font-family: 'Museo Sans Cyrl Bold', sans-serif;
   font-weight: 700;
   border: none;
+}
+
+.modal-dialog__massege {
+  text-align: center;
+  font-size: 13px;
+  font-family: 'Museo Sans Cyrl Bold', sans-serif;
+  font-weight: 700;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
 .modal-dialog__contacts {

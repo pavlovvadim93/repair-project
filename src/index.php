@@ -96,8 +96,8 @@
                             <input type="text" name="username" class="input offer-block__input wow rollIn" id="offer-name" data-wow-delay="0.2s" placeholder="Ваше имя">
                             <input type="tel" name="phone" class="input offer-block__input wow rollIn" id="offer-phone" data-wow-delay="0.4s" placeholder="Ваш телефон">
                         </div>
-                        <button class="button offer-block__button wow jackInTheBox" data-wow-delay="0.7s">Получить бесплатный
-                            дизайн-проект</button>
+                        <button class="button offer-block__button wow jackInTheBox" data-wow-delay="0.7s">Получить бесплатный дизайн-проект</button>
+                        <div class="form offer-block__massege" id="offer-masssage"></div>
                     </form>
                     <div class="offer-block__info">
                         <div class="offer-block__info-description">
@@ -380,6 +380,7 @@
                                 <input type="email"name="email" class="input brif__input" id="brif-email" placeholder="Ваш email">
                             </div>
                                 <button class="button brif__button">Рассчитать стоимость</button>
+                                <div class="form brif__massege" id="brif-masssage"></div>
                             <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
                         </form>
                     </div>
@@ -449,6 +450,7 @@
                     <input type="tel" name="phone" class="input modal-dialog__input" id="modal-phone" placeholder="Ваш телефон">
                 </div>
                 <button class="button modal-dialog__button">Узнать стоимость</button>
+                <div class="form modal-dialog__massege" id="modal-masssage"></div>
             </form>
             <span class="modal-dialog__contacts">Или Вы можете перезвонить нам сами по телефону:</span>
             <a href="tel:+7(8182)42-51-31" class="modal-dialog__contacts-phone">+7 (8182) 42-51-31</a>

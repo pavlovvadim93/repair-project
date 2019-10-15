@@ -11,9 +11,5 @@ close.addEventListener('click', function() {
     modal.classList.remove('modal_active')
 })
 
-setTimeout(function () {
-    document.getElementById('modal').style.display = 'none';
-}, 5000);
-
 
 
