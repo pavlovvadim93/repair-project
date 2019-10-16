@@ -5,7 +5,7 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 // Переменные, которые отправляет пользователь
 $userName = $_POST['username'];
-$userPhone = $_POST['phone'];
+$phone = $_POST['phone'];
 $email = $_POST['email'];
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
@@ -29,7 +29,7 @@ try {
     
     $mail->Subject = 'Новая заявка';
     $mail->Body    = "<b>Имя:</b> $userName <br>
-    <b>Телефон:</b> $userPhone <br>
+    <b>Телефон:</b> $phone <br>
     <b>Почта:</b> $email";
     // Проверяем отравленность сообщения
     if ($mail->send()) {
@@ -39,4 +39,6 @@ try {
     }
 } catch (Exception $e) {
         echo "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
+        echo "Сообщение не было отправлено. Причина ошибки: {$phone->ErrorInfo}";
+        echo "Сообщение не было отправлено. Причина ошибки: {$userName->ErrorInfo}";
 }

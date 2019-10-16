@@ -5,11 +5,12 @@ $('#offer-form').validate({
     rules: {
         username: {
             required: true,
+    
             minlength: 3,
             maxlength: 15
         },
         phone: {
-            required: true
+            required: true,
         }
     },
     messages: {
@@ -89,8 +90,9 @@ $("#modal-phone").mask('+7 (999) 999-99-99');
 /* Маска для телефона в блоке brif */
 $("#brif-phone").mask('+7 (999) 999-99-99');
 
-$('#offer-form').on('submit', function name(event) {
+$('#offer-form').on('submit', function (event) {
     event.preventDefault();
+    return false,
     $.ajax({
         type: "POST",
         url: "mail.php",
@@ -101,7 +103,7 @@ $('#offer-form').on('submit', function name(event) {
             $(".offer-block__massege").text(response);
         },
         error: function (jqXHR, textStatus, errorThrown) {
-            consol.error(jqXHR + "  " + textstatus);
+            consol.error(jqXHR + "  " + textStatus);
         }
     });
 });
@@ -125,10 +127,11 @@ $('#modal-form').on('submit', function name(event) {
 
 $('#brif-form').on('submit', function name(event) {
     event.preventDefault();
+    var phone = $('input [type]')
     $.ajax({
         type: "POST",
         url: "mail.php",
-        data: $(this).serialize(),
+        data: $('#phone').serialize(),
         success: function (response) {
             console.log('Прибыли данные: ' + response);
             $('#brif-form')[0].reset();
