@@ -533,7 +533,7 @@ img {
 
 @media (max-width: 567px) {
   .hero {
-    padding: 28px 2px 52px 18px;
+    padding: 24px 2px 38px 18px;
   }
   .hero-text__title {
     font-size: 24px;
@@ -545,15 +545,19 @@ img {
   }
   .hero-list {
     padding: 0px 0px;
-    margin-bottom: 46px;
+    margin-bottom: 44px;
   }
   .hero-image {
     margin-left: auto;
     margin-right: auto;
-    max-width: 100%;
-    height: 50%;
-    max-width: 320px;
+    width: 100%;
+    max-height: 230px;
     margin-left: -8px;
+  }
+  .hero-image img {
+    position: absolute;
+    right: 1%;
+    height: 96%;
   }
 }
 
@@ -617,6 +621,7 @@ img {
 }
 
 .offer-block__massege {
+  display: none;
   text-align: center;
   font-family: 'Museo Sans Cyrl Bold', sans-serif;
   font-weight: 700;
@@ -648,8 +653,7 @@ img {
 
 .offer-block__info-contacts {
   font-size: 15px;
-  line-height: 24px;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   padding-right: 8px;
 }
 
@@ -702,7 +706,6 @@ img {
   }
   .offer-block__info-contacts {
     font-size: 12px;
-    line-height: 24px;
   }
   .offer-block__info-description {
     width: 100%;
@@ -749,7 +752,7 @@ img {
 @media (max-width: 768px) {
   .offer {
     background: #ffffff;
-    padding: 34px 15px 21px 13px;
+    padding: 34px 15px 22px 13px;
   }
   .offer-block {
     width: 100%;
@@ -823,6 +826,9 @@ img {
 }
 
 @media (max-width: 532px) {
+  .offer-block__window {
+    margin-bottom: 1px;
+  }
   .offer-block__title {
     text-align: left;
     line-height: 22px;
@@ -831,11 +837,17 @@ img {
     text-align: left;
     max-width: 250px;
     font-size: 14px;
-    line-height: 19px;
+    line-height: 18px;
     margin-bottom: 24px;
   }
   .offer-block__form {
     width: 100%;
+  }
+  .offer-block__button {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 22px;
+    padding: 16px 40px;
   }
   .offer-block__info {
     text-align: left;
@@ -851,6 +863,7 @@ img {
   }
   .offer-block__info-phone {
     text-align: left;
+    margin-top: 0px;
   }
 }
 
@@ -934,7 +947,7 @@ img {
   .slider__image {
     width: 100%;
     max-width: 246px;
-    max-height: 186px;
+    max-height: 184px;
   }
 }
 
@@ -1100,13 +1113,13 @@ img {
 
 @media (max-width: 567px) {
   .price {
-    padding: 50px 16px 10px 16px;
+    padding: 50px 16px 11px 16px;
   }
   .price__title {
     font-size: 18px;
     line-height: 22px;
     max-width: 90%;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
   .price__subtitle {
     font-size: 14px;
@@ -1114,11 +1127,11 @@ img {
     text-align: center;
   }
   .price__card {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
   .card__text {
     font-size: 14px;
-    padding: 28px;
+    padding: 31px;
   }
   .card__title {
     margin-top: 0;
@@ -1153,6 +1166,24 @@ img {
 }
 
 .step__image {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #ffd200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  border-radius: 50%;
+  margin-bottom: 28px;
+}
+
+.step__image-request {
   width: 100px;
   height: 100px;
   border: 3px solid #ffd200;
@@ -1230,12 +1261,15 @@ img {
 }
 
 @media (max-width: 567px) {
+  .step {
+    margin-bottom: 28px;
+  }
   .steps {
-    padding: 10px 0px 46px 0;
+    padding: 10px 0px 26px 0;
   }
   .steps__title {
     font-size: 19px;
-    line-height: 23px;
+    line-height: 22px;
     margin: auto;
     margin-bottom: 9px;
   }
@@ -1246,7 +1280,10 @@ img {
     margin-bottom: 19px;
   }
   .step__image {
-    margin-bottom: 25px;
+    margin-bottom: 27px;
+  }
+  .step__image-request {
+    margin-bottom: 19px;
   }
   .step__text {
     font-size: 12px;
@@ -1258,19 +1295,25 @@ img {
 
 /* Стили для блока информация о ремонте */
 .info {
-  background: url("../img/info/info-bg.png") repeat-x;
-  background-size: 100%, fixed;
   padding: 60px 0px 50px 0px;
 }
 
-.info__title {
+.info-block {
+  background-color: #ffc000;
+  width: 100%;
+  height: 100%;
+  height: 280px;
+  padding: 60px 0px;
+  margin-top: 100px;
+}
+
+.info-block__title {
   width: 100%;
   max-width: 930px;
   font-size: 32px;
   line-height: 50px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 195px;
   text-align: center;
 }
 
@@ -1327,10 +1370,10 @@ img {
 
 @media (max-width: 768px) {
   .info {
-    padding: 70px 0px 50px 0px;
+    padding: 60px 0px 50px 0px;
     background-size: 20%, fixed;
   }
-  .info__title {
+  .info-block__title {
     font-size: 28px;
     line-height: 34px;
     margin-bottom: 145px;
@@ -1349,7 +1392,18 @@ img {
 
 @media (max-width: 567px) {
   .info {
-    padding: 55px 0px 12px 0px;
+    padding: 19px 0px 18px 0px;
+  }
+  .info-block {
+    height: 235px;
+    padding: 58px 0px;
+    margin-bottom: 59px;
+  }
+  .info-block__title {
+    font-size: 18px;
+    width: 100%;
+    max-width: 265px;
+    line-height: 22px;
   }
   .info-description {
     margin-right: auto;
@@ -1614,7 +1668,7 @@ img {
   max-width: 400px;
 }
 
-.form__heading {
+.shape__heading {
   font-size: 22px;
   line-height: 32px;
   margin-bottom: 46px;
@@ -1622,13 +1676,13 @@ img {
   font-weight: 700;
 }
 
-.form__subtitle {
+.shape__subtitle {
   display: inline-block;
   margin-bottom: 100px;
   font-size: 16px;
 }
 
-.form__description {
+.shape__description {
   display: block;
   font-size: 16px;
 }
@@ -1671,12 +1725,12 @@ img {
   }
 }
 
-.form__title {
+.shape__title {
   font-size: 20px;
   margin-bottom: 15px;
 }
 
-.form__subtitle {
+.shape__subtitle {
   margin-bottom: 30px;
 }
 
@@ -1749,22 +1803,22 @@ img {
     margin-right: 10px;
     padding: 0px 10px;
   }
-  .form {
+  .shape {
     padding-left: 0px;
     padding-bottom: 12px;
   }
-  .form__heading {
+  .shape__heading {
     font-size: 18px;
     line-height: 26px;
     margin-bottom: 22px;
     font-family: 'Museo Sans Cyrl Bold', sans-serif;
     font-weight: 700;
   }
-  .form__subtitle {
+  .shape__subtitle {
     display: inline-block;
     font-size: 14px;
   }
-  .form__description {
+  .shape__description {
     font-size: 14px;
     width: 50%;
     line-height: 23px;

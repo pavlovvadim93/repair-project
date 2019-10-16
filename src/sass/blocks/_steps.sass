@@ -23,6 +23,16 @@
         margin: auto
         border-radius: 50%
         margin-bottom: 28px
+        &-request
+            width: 100px
+            height: 100px
+            border: 3px solid $main-color
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: auto
+            border-radius: 50%
+            margin-bottom: 28px
     &__text
         font-size: 14px
         line-height: 20px
@@ -60,11 +70,12 @@
                 flex-direction: column
 @media (max-width: 567px)
     .step
+        margin-bottom: 28px
         &s
-            padding: 10px 0px 46px 0
+            padding: 10px 0px 26px 0
             &__title
                 font-size: 19px
-                line-height: 23px
+                line-height: 22px
                 margin: auto
                 margin-bottom: 9px
             &__subtitle
@@ -73,11 +84,14 @@
                 line-height: 45px
                 margin-bottom: 19px
         &__image
-            margin-bottom: 25px
+            margin-bottom: 27px
+            &-request
+                margin-bottom: 19px
         &__text
             font-size: 12px
             line-height: 17px
             max-width: 160px
             margin: auto
+        
 
 
