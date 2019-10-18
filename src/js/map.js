@@ -10,8 +10,10 @@ function init() {
     var myMapTemp = new ymaps.Map("map-yandex", {
         center: [55.611413, 37.2011344], // координаты центра на карте
         zoom: 18, // коэффициент приближения карты
-        controls: ['zoomControl', 'fullscreenControl'] // выбираем только те функции, которые необходимы при использовании
+        controls: ['zoomControl'] // выбираем только те функции, которые необходимы при использовании
     });
+    myMapTemp.behaviors.disable('scrollZoom');
+    
     var myPlacemarkTemp = new ymaps.GeoObject({
         geometry: {
             type: "Point",

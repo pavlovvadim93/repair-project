@@ -1808,10 +1808,21 @@ img {
 }
 
 .description__image {
-  position: absolute;
   bottom: 0;
   left: 0;
-  margin-top: 16px;
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  max-height: 275px;
+}
+
+.description__image img {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  height: 100%;
+  width: auto;
 }
 
 @media (max-width: 1200px) {
@@ -1825,6 +1836,14 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 992px) {
+  -block {
+    height: 220px;
+    padding: 40px 0px;
+    margin-bottom: 70px;
   }
 }
 
@@ -1885,6 +1904,9 @@ img {
     line-height: 18px;
     padding-left: 18px;
   }
+  .description__image {
+    max-height: 195px;
+  }
 }
 
 /* Стили для блока гарантия и договор */
@@ -1938,6 +1960,16 @@ img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.contract__image img {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  height: 100%;
+  width: auto;
 }
 
 .contract__text {
@@ -2297,6 +2329,7 @@ img {
   left: 0;
   top: 0;
   width: 50%;
+  z-index: 0;
 }
 
 .ymap-container {
@@ -2401,10 +2434,10 @@ img {
 }
 
 .contacts {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  padding-top: 69px;
-  padding-left: 212px;
+  padding-top: 39px;
+  position: absolute;
+  top: 0;
+  right: 220px;
 }
 
 .contacts__title {
@@ -2413,6 +2446,8 @@ img {
   font-size: 22px;
   line-height: 32px;
   margin-bottom: 90px;
+  width: 100%;
+  max-width: 350px;
 }
 
 .contacts-block {
@@ -2477,13 +2512,13 @@ img {
 
 @media (max-width: 1200px) {
   .contacts {
-    padding-left: 152px;
+    right: 120px;
   }
 }
 
 @media (max-width: 992px) {
   .contacts {
-    padding-left: 60px;
+    right: 20px;
   }
 }
 
@@ -2499,8 +2534,11 @@ img {
             flex-direction: column;
   }
   .contacts {
+    position: relative !important;
+    margin-right: auto;
+    margin-left: auto;
+    right: 0;
     padding-top: 39px;
-    padding-left: 40px;
   }
   .contacts__title {
     text-align: center;
@@ -2509,6 +2547,7 @@ img {
     font-size: 20px;
     line-height: 32px;
     margin-bottom: 40px;
+    max-width: 550px;
   }
   .contacts-list {
     display: -webkit-box;
@@ -2544,6 +2583,7 @@ img {
     text-align: left;
     font-size: 18px;
     line-height: 22px;
+    max-width: 350px;
     margin-bottom: 34px;
   }
   .contacts-list {
@@ -2591,7 +2631,9 @@ img {
   margin: auto;
   max-width: 450px;
   width: 90%;
+  height: 100%;
   min-width: 200px;
+  max-height: 530px;
   background-color: #ffffff;
   padding: 41px 79px;
   text-align: center;
@@ -2677,6 +2719,7 @@ img {
 @media (max-width: 567px) {
   .modal-dialog {
     padding: 41px 50px;
+    max-height: 470px;
   }
   .modal-dialog__title {
     font-size: 16px;
