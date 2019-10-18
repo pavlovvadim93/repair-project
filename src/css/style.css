@@ -1071,7 +1071,7 @@ img {
 }
 
 .offer-block__massege {
-  display: none;
+  display: block;
   text-align: center;
   font-family: 'Museo Sans Cyrl Bold', sans-serif;
   font-weight: 700;
@@ -1124,6 +1124,16 @@ img {
   padding-right: 68px;
   font-family: 'Museo Sans Cyrl Bold', sans-serif;
   font-weight: 700;
+}
+
+.offer #-massege {
+  display: block;
+  text-align: center;
+  font-family: 'Museo Sans Cyrl Bold', sans-serif;
+  font-weight: 700;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 1200px) {

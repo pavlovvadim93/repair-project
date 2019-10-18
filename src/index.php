@@ -28,8 +28,6 @@
                     <div class="btn">
                         <a href="#" class="button navbar-block__button" id="button">Перезвоните мне</a>
                     </div>
-                    <!-- /.button -->
-                   <!--  <button class="button navbar__button">Перезвоните мне</button> -->
                 </div>
                 <!-- /.navbar_info -->
             </div>
@@ -375,11 +373,11 @@
                             <div class="form brif__window">
                                 <input type="tel" name="phone" class="input brif__input" id="brif-phone" placeholder="Ваш телефон">
                             </div>
-                     <!--        <div class="form brif__window">
+                            <div class="form brif__window">
                                 <input type="email"name="email" class="input brif__input" id="brif-email" placeholder="Ваш email">
-                            </div> -->
+                            </div>
                                 <button class="button brif__button">Рассчитать стоимость</button>
-                                <!-- <div class="form brif__massege" id="brif-masssage"></div> -->
+                                <div class="form brif__massege" id="brif-masssage"></div>
                             <span class="shape__description">Мы перезвоним Вам в течение 60 секунд</span>
                         </form>
                     </div>

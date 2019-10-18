@@ -100,7 +100,7 @@ $('#offer-form').on('submit', function (event) {
         success: function (response) {
             console.log('Прибыли данные: ' + response);
             $('#offer-form')[0].reset();
-            $(".offer-block__massege").text(response);
+            $("#offer-masssage").text(response);
         },
         error: function (jqXHR, textStatus, errorThrown) {
             consol.error(jqXHR + "  " + textStatus);
