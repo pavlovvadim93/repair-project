@@ -40,3 +40,7 @@ gulp.task('move-php', () => {
     return gulp.src('src/*.php')
         .pipe(gulp.dest('project/'))
 });
+gulp.task('move-mail-php', () => {
+    return gulp.src('src/phpmailer/*.php')
+        .pipe(gulp.dest('project/phpmailer//'))
+});
