@@ -6,11 +6,11 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url(/Users/vadimpavlov/Desktop/Practice/repair-project/src/sass/animate/_base.css);
-@import url(/Users/vadimpavlov/Desktop/Practice/repair-project/src/sass/animate/fading_entrances/fadeInLeft.css);
-@import url(/Users/vadimpavlov/Desktop/Practice/repair-project/src/sass/animate/fading_entrances/fadeInUp.css);
-@import url(/Users/vadimpavlov/Desktop/Practice/repair-project/src/sass/animate/specials/rollIn.css);
-@import url(/Users/vadimpavlov/Desktop/Practice/repair-project/src/sass/animate/specials/jackInTheBox.css);
+@import url(/Applications/MAMP/htdocs/repair-project/src/sass/animate/_base.css);
+@import url(/Applications/MAMP/htdocs/repair-project/src/sass/animate/fading_entrances/fadeInLeft.css);
+@import url(/Applications/MAMP/htdocs/repair-project/src/sass/animate/fading_entrances/fadeInUp.css);
+@import url(/Applications/MAMP/htdocs/repair-project/src/sass/animate/specials/rollIn.css);
+@import url(/Applications/MAMP/htdocs/repair-project/src/sass/animate/specials/jackInTheBox.css);
 html {
   line-height: 1.15;
   /* 1 */

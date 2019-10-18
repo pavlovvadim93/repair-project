@@ -35,7 +35,7 @@ gulp.task('move-html', () => {
     return gulp.src('src/*.html')
     .pipe(gulp.dest('project/'))
 });
-/* Перенести файлы PHP */
+
 gulp.task('move-php', () => {
     return gulp.src('src/*.php')
         .pipe(gulp.dest('project/'))
