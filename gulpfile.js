@@ -19,8 +19,6 @@ gulp.task('minify-js', () => {
     .pipe(gulp.dest('room/js/'))
 });
 
-/* Сжать файлы JS */
-
 /* Перенести файлы IMG */
 gulp.task('imagemin', () => {
     return gulp.src('src/img/**/*.*')
@@ -36,4 +34,9 @@ gulp.task('move-fonts', () => {
 gulp.task('move-html', () => {
     return gulp.src('src/*.html')
     .pipe(gulp.dest('room/'))
+});
+/* Перенести файлы PHP */
+gulp.task('move-php', () => {
+    return gulp.src('src/*.php')
+        .pipe(gulp.dest('room/'))
 });

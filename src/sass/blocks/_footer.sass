@@ -5,6 +5,7 @@
     left: 0
     top: 0   
     width: 50% 
+    z-index: 0
 .ymap-container 
     position: relative
     overflow: hidden
@@ -69,14 +70,17 @@
     to 
     opacity: 1
 .contacts
-    flex-basis: 50%
-    padding-top: 69px
-    padding-left: 212px
+    padding-top: 39px
+    position: absolute
+    top: 0
+    right: 220px
     &__title
         +bold
         font-size: 22px
         line-height: 32px
         margin-bottom: 90px
+        width: 100%
+        max-width: 350px
     &-block
         display: flex
         justify-content: flex-end
@@ -114,10 +118,10 @@
             +bold
 @media (max-width: 1200px)
     .contacts
-        padding-left: 152px
+        right: 120px
 @media (max-width: 992px) 
     .contacts
-        padding-left: 60px 
+        right: 20px
 @media (max-width: 768px)
     .maps
         top: 100%   
@@ -126,14 +130,18 @@
         &-block
             flex-direction: column
     .contacts
+        position: relative !important
+        margin-right: auto
+        margin-left: auto
+        right: 0
         padding-top: 39px
-        padding-left: 40px
         &__title
             text-align: center
             +bold
             font-size: 20px
             line-height: 32px
             margin-bottom: 40px
+            max-width: 550px
         &-list
             display: flex
             margin-right: 5px
@@ -156,6 +164,7 @@
             text-align: left
             font-size: 18px
             line-height: 22px
+            max-width: 350px
             margin-bottom: 34px
         &-list
             display: block
