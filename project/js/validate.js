@@ -58,10 +58,6 @@ $('#brif-form').validate({
             minlength: 3,
             maxlength: 15
         },
-        email: {
-            required: true,
-            email: true
-        },
         phone: {
             required: true
         }  
@@ -71,10 +67,6 @@ $('#brif-form').validate({
             required: "Укажите Ваше имя",
             minlength: "Требуется не менее 3 символов!",
             maxlength: "Требуется не более 15 символов!"
-        },
-        email: {
-            required: "Заполните поле",
-            email: "Введите корректный email"
         },
         phone: {
             required: "Укажите Ваш телефон"

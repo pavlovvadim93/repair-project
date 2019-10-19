@@ -2772,7 +2772,7 @@ img {
   margin-top: 5px;
 }
 
-@media (max-width: 567px) {
+@media all and (orientation: portrait), all and (max-width: 860px) {
   .modal-dialog {
     padding: 41px 50px;
     max-height: 470px;
@@ -2816,7 +2816,7 @@ img {
   }
 }
 
-@media all and (orientation: landscape) {
+@media all and (orientation: portrait) and (orientation: landscape), all and (max-width: 860px) and (orientation: landscape), all and (orientation: portrait) and (min-width: 480px), all and (max-width: 860px) and (min-width: 480px) {
   .modal-dialog {
     padding: 5px 20px;
     max-height: 330px;

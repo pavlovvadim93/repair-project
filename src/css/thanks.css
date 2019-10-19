@@ -424,7 +424,7 @@ img {
   display: inline-block;
 }
 
-@media (max-width: 992px) {
+@media all and (orientation: portrait), all and (max-width: 860px) {
   .thank {
     padding: 60px 0;
   }
@@ -451,14 +451,14 @@ img {
   }
 }
 
-@media (max-width: 567px) {
+@media all and (orientation: portrait) and (orientation: landscape), all and (max-width: 860px) and (orientation: landscape), all and (orientation: portrait) and (max-width: 320px), all and (max-width: 860px) and (max-width: 320px) {
   .thank {
-    padding: 60px 0;
+    padding: 10px 0;
   }
   .thank-block {
     background-color: #ffd200;
-    width: 300px;
-    height: 230px;
+    width: 390px;
+    height: 240px;
     padding: 20px 20px 20px 25px;
     margin-left: 57px;
     margin-right: 69px;
@@ -470,8 +470,8 @@ img {
   }
   .thank-text {
     padding: 10px;
-    width: 250px;
-    height: 190px;
+    width: 340px;
+    height: 200px;
     text-align: center;
     font-family: 'Museo Sans Cyrl Bold', sans-serif;
     font-weight: 700;
@@ -491,14 +491,14 @@ img {
   }
 }
 
-@media all and (orientation: landscape) {
+@media all and (orientation: portrait), all and (max-width: 480px) {
   .thank {
-    padding: 10px 0;
+    padding: 30px 0;
   }
   .thank-block {
     background-color: #ffd200;
-    width: 300px;
-    height: 230px;
+    width: 290px;
+    height: 240px;
     padding: 20px 20px 20px 25px;
     margin-left: 57px;
     margin-right: 69px;
@@ -510,8 +510,8 @@ img {
   }
   .thank-text {
     padding: 10px;
-    width: 250px;
-    height: 190px;
+    width: 240px;
+    height: 200px;
     text-align: center;
     font-family: 'Museo Sans Cyrl Bold', sans-serif;
     font-weight: 700;

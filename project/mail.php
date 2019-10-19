@@ -6,7 +6,6 @@ require 'phpmailer/Exception.php';
 // Переменные, которые отправляет пользователь
 $userName = $_POST['username'];
 $phone = $_POST['phone'];
-$email = $_POST['email'];
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
     $msg = "Форма успешно создана";
@@ -29,8 +28,7 @@ try {
     
     $mail->Subject = 'Новая заявка';
     $mail->Body    = "<b>Имя:</b> $userName <br>
-    <b>Телефон:</b> $phone <br>
-    <b>Почта:</b> $email";
+    <b>Телефон:</b> $phone <br>";
     // Проверяем отравленность сообщения
     if ($mail->send()) {
         header('Location: thanks.php');
@@ -39,6 +37,4 @@ try {
     }
 } catch (Exception $e) {
         echo "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
-        echo "Сообщение не было отправлено. Причина ошибки: {$phone->ErrorInfo}";
-        echo "Сообщение не было отправлено. Причина ошибки: {$userName->ErrorInfo}";
 }

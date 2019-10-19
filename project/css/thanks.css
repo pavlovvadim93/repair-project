@@ -145,6 +145,7 @@ img {
   cursor: pointer;
 }
 
+/* Сообщение в input */
 #brif-name-error {
   position: absolute;
   top: 24px;
@@ -153,13 +154,6 @@ img {
 }
 
 #brif-phone-error {
-  position: absolute;
-  top: 24px;
-  right: 30px;
-  color: red;
-}
-
-#brif-email-error {
   position: absolute;
   top: 24px;
   right: 30px;
@@ -198,32 +192,62 @@ img {
   color: red;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   #brif-name-error {
-    left: 60px;
-    font-size: 12px;
+    top: 24px;
+    right: 30px;
+    font-size: 14px;
   }
   #brif-phone-error {
-    left: 120px;
-    font-size: 12px;
-  }
-  #brif-email-error {
-    left: 155px;
-    font-size: 12px;
+    top: 24px;
+    right: 30px;
+    font-size: 14px;
   }
   #offer-name-error {
-    position: absolute;
     top: 50px;
     left: 15px;
-    font-size: 14px;
-    color: red;
+    font-size: 13px;
   }
   #offer-phone-error {
-    position: absolute;
     top: 50px;
-    right: 60px;
+    right: 20px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 992px) {
+  #offer-name-error {
+    top: 50px;
+    left: 90px;
+    font-size: 13px;
+  }
+  #offer-phone-error {
+    top: 125px;
+    left: 80px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  #brif-name-error {
+    top: 24px;
+    right: 185px;
     font-size: 14px;
-    color: red;
+  }
+  #brif-phone-error {
+    top: 24px;
+    right: 185px;
+    font-size: 14px;
+  }
+  #offer-name-error {
+    top: 50px;
+    left: 170px;
+    font-size: 13px;
+  }
+  #offer-phone-error {
+    top: 125px;
+    left: 160px;
+    font-size: 13px;
   }
   #modal-name-error {
     position: absolute;
@@ -242,6 +266,16 @@ img {
 }
 
 @media (max-width: 567px) {
+  #brif-name-error {
+    top: 45px;
+    right: 93px;
+    font-size: 13px;
+  }
+  #brif-phone-error {
+    top: 45px;
+    right: 93px;
+    font-size: 13px;
+  }
   #modal-name-error {
     font-size: 12px;
     top: 30px;
@@ -249,6 +283,16 @@ img {
   #modal-phone-error {
     font-size: 12px;
     top: 30px;
+  }
+  #offer-name-error {
+    top: 50px;
+    left: 130px;
+    font-size: 13px;
+  }
+  #offer-phone-error {
+    top: 125px;
+    left: 120px;
+    font-size: 13px;
   }
 }
 
@@ -410,6 +454,46 @@ img {
 @media (max-width: 567px) {
   .thank {
     padding: 60px 0;
+  }
+  .thank-block {
+    background-color: #ffd200;
+    width: 300px;
+    height: 230px;
+    padding: 20px 20px 20px 25px;
+    margin-left: 57px;
+    margin-right: 69px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .thank-block__button {
+    font-size: 10px;
+  }
+  .thank-text {
+    padding: 10px;
+    width: 250px;
+    height: 190px;
+    text-align: center;
+    font-family: 'Museo Sans Cyrl Bold', sans-serif;
+    font-weight: 700;
+  }
+  .thank-text__title {
+    font-size: 20px;
+    line-height: 5px;
+    margin-bottom: 10px;
+  }
+  .thank-text__subtitle {
+    font-size: 13px;
+    line-height: 65px;
+    margin-bottom: 28px;
+    font-family: 'Museo Sans Cyrl Bold', sans-serif;
+    font-weight: 700;
+    display: inline-block;
+  }
+}
+
+@media all and (orientation: landscape) {
+  .thank {
+    padding: 10px 0;
   }
   .thank-block {
     background-color: #ffd200;

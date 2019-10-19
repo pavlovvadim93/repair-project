@@ -142,7 +142,11 @@
                 <!-- /.section-subtitle price__subtitle -->
                 <div class="cards">
                     <div class="card price__card wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="card__image"><img src="img/price/bathroom.jpg" class="card__img" alt=""></div>
+                        <a href="#" class="card__ref">
+                            <div class="card__image">
+                                <img src="img/price/bathroom.jpg" class="card__img" alt="">
+                            </div>
+                        </a> 
                         <!-- /.card__image -->
                         <div class="card__text">
                             <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
@@ -154,7 +158,11 @@
                     </div>
                     <!-- /.card -->
                     <div class="card price__card wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="card__image"><img src="img/price/living.jpg" class="card__img" alt=""></div>
+                        <a href="#" class="card__ref">
+                            <div class="card__image">
+                                <img src="img/price/living.jpg" class="card__img" alt="">
+                            </div>
+                        </a>
                         <!-- /.card__image -->
                         <div class="card__text">
                             <h4 class="card__title">Ремонт комнат и квартир</h4>
@@ -166,7 +174,11 @@
                     </div>
                     <!-- /.card -->
                     <div class="card price__card wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="card__image"><img src="img/price/office.jpg" class="card__img" alt=""></div>
+                        <a href="#" class="card__ref">
+                            <div class="card__image">
+                                <img src="img/price/office.jpg" class="card__img" alt="">
+                            </div>
+                        </a>
                         <!-- /.card__image -->
                         <div class="card__text">
                             <h4 class="card__title">Отделка офисных помещений</h4>
@@ -178,7 +190,11 @@
                     </div>
                     <!-- /.card -->
                     <div class="card price__card wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="card__image"><img src="img/price/buildings.jpg" class="card__img" alt=""></div>
+                        <a href="#" class="card__ref">
+                            <div class="card__image">
+                                <img src="img/price/buildings.jpg" class="card__img" alt="">
+                            </div>
+                        </a>
                         <!-- /.card__image -->
                         <div class="card__text">
                             <h4 class="card__title">Ремонт в новостройках</h4>
@@ -190,7 +206,11 @@
                     </div>
                     <!-- /.card -->
                     <div class="card price__card wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="card__image"><img src="img/price/kitchen.jpg" class="card__img" alt=""></div>
+                        <a href="#" class="card__ref">
+                            <div class="card__image">
+                                <img src="img/price/kitchen.jpg" class="card__img" alt="">
+                            </div>
+                        </a>
                         <!-- /.card__image -->
                         <div class="card__text">
                             <h4 class="card__title">Ремонт кухонь</h4>
@@ -202,7 +222,11 @@
                     </div>
                     <!-- /.card -->
                     <div class="card price__card wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="card__image"><img src="img/price/house.jpg" class="card__img" alt=""></div>
+                        <a href="#" class="card__ref">
+                            <div class="card__image">
+                                <img src="img/price/house.jpg" class="card__img" alt="">
+                            </div>
+                        </a>
                         <!-- /.card__image -->
                         <div class="card__text">
                             <h4 class="card__title">Ремонт дач и коттеджей</h4>
@@ -347,7 +371,7 @@
             <div class="container">
                 <div class="brif-block">
                     <div class="interview brif__interview">
-                        <h3 class="interview__title">Мы можем озвучить <br> Вам примерную стоимость<br>работы и материалов по телефону</h3>
+                        <h3 class="interview__title">Мы можем озвучить Вам примерную стоимость<br>работы и материалов по телефону</h3>
                         <span class="interview__subtitle">Для этого нужно ответить на 4 вопроса:</span>
                         <ul class="interview-list">
                             <li class="interview-list__item">
@@ -378,9 +402,6 @@
                             </div> 
                             <div class="form brif__window">
                                 <input type="tel" name="phone" class="input brif__input" id="brif-phone" placeholder="Ваш телефон">
-                            </div>
-                            <div class="form brif__window">
-                                <input type="email" name="email" class="input brif__input" id="brif-email" placeholder="Ваш email">
                             </div>
                                 <button class="button brif__button">Рассчитать стоимость</button>
                             <span class="shape__description">Мы перезвоним Вам в течение 60 секунд</span>
