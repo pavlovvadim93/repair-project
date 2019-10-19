@@ -321,7 +321,7 @@
                     <div class="contract guarantee-contact">
                         <div class="contract__box">
                             <div class="contract__frame">
-                                <a data-fancybox="gallery" href="img/guarantee/contract-2-big.jpg">
+                                <a data-fancybox="gallery" href="img/guarantee/contract-1-big.jpg">
                                     <img class="contract__image" src="img/guarantee/contract-2.jpg" alt="">
                                 </a>
                             </div>
@@ -331,7 +331,7 @@
                     <div class="contract guarantee-contact">
                         <div class="contract__box">
                             <div class="contract__frame">
-                                <a data-fancybox="gallery" href="img/guarantee/contract-3-big.jpg">
+                                <a data-fancybox="gallery" href="img/guarantee/contract-1-big.jpg">
                                     <img class="contract__image" src="img/guarantee/contract-3.jpg" alt="">
                                 </a>
                             </div>

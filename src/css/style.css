@@ -6,11 +6,11 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url(/Applications/MAMP/htdocs/repair-project/src/sass/animate/_base.css);
-@import url(/Applications/MAMP/htdocs/repair-project/src/sass/animate/fading_entrances/fadeInLeft.css);
-@import url(/Applications/MAMP/htdocs/repair-project/src/sass/animate/fading_entrances/fadeInUp.css);
-@import url(/Applications/MAMP/htdocs/repair-project/src/sass/animate/specials/rollIn.css);
-@import url(/Applications/MAMP/htdocs/repair-project/src/sass/animate/specials/jackInTheBox.css);
+@import url(/Users/vadimpavlov/Desktop/Practice/repair-project/src/sass/animate/_base.css);
+@import url(/Users/vadimpavlov/Desktop/Practice/repair-project/src/sass/animate/fading_entrances/fadeInLeft.css);
+@import url(/Users/vadimpavlov/Desktop/Practice/repair-project/src/sass/animate/fading_entrances/fadeInUp.css);
+@import url(/Users/vadimpavlov/Desktop/Practice/repair-project/src/sass/animate/specials/rollIn.css);
+@import url(/Users/vadimpavlov/Desktop/Practice/repair-project/src/sass/animate/specials/jackInTheBox.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -493,6 +493,7 @@ img {
   cursor: pointer;
 }
 
+/* Сообщение в input */
 #brif-name-error {
   position: absolute;
   top: 24px;
@@ -501,13 +502,6 @@ img {
 }
 
 #brif-phone-error {
-  position: absolute;
-  top: 24px;
-  right: 30px;
-  color: red;
-}
-
-#brif-email-error {
   position: absolute;
   top: 24px;
   right: 30px;
@@ -546,32 +540,62 @@ img {
   color: red;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   #brif-name-error {
-    left: 60px;
-    font-size: 12px;
+    top: 24px;
+    right: 30px;
+    font-size: 14px;
   }
   #brif-phone-error {
-    left: 120px;
-    font-size: 12px;
-  }
-  #brif-email-error {
-    left: 155px;
-    font-size: 12px;
+    top: 24px;
+    right: 30px;
+    font-size: 14px;
   }
   #offer-name-error {
-    position: absolute;
     top: 50px;
     left: 15px;
-    font-size: 14px;
-    color: red;
+    font-size: 13px;
   }
   #offer-phone-error {
-    position: absolute;
     top: 50px;
-    right: 60px;
+    right: 20px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 992px) {
+  #offer-name-error {
+    top: 50px;
+    left: 90px;
+    font-size: 13px;
+  }
+  #offer-phone-error {
+    top: 125px;
+    left: 80px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  #brif-name-error {
+    top: 24px;
+    right: 185px;
     font-size: 14px;
-    color: red;
+  }
+  #brif-phone-error {
+    top: 24px;
+    right: 185px;
+    font-size: 14px;
+  }
+  #offer-name-error {
+    top: 50px;
+    left: 170px;
+    font-size: 13px;
+  }
+  #offer-phone-error {
+    top: 125px;
+    left: 160px;
+    font-size: 13px;
   }
   #modal-name-error {
     position: absolute;
@@ -590,6 +614,16 @@ img {
 }
 
 @media (max-width: 567px) {
+  #brif-name-error {
+    top: 45px;
+    right: 93px;
+    font-size: 13px;
+  }
+  #brif-phone-error {
+    top: 45px;
+    right: 93px;
+    font-size: 13px;
+  }
   #modal-name-error {
     font-size: 12px;
     top: 30px;
@@ -597,6 +631,16 @@ img {
   #modal-phone-error {
     font-size: 12px;
     top: 30px;
+  }
+  #offer-name-error {
+    top: 50px;
+    left: 130px;
+    font-size: 13px;
+  }
+  #offer-phone-error {
+    top: 125px;
+    left: 120px;
+    font-size: 13px;
   }
 }
 
@@ -1126,16 +1170,6 @@ img {
   font-weight: 700;
 }
 
-.offer #-massege {
-  display: block;
-  text-align: center;
-  font-family: 'Museo Sans Cyrl Bold', sans-serif;
-  font-weight: 700;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 20px;
-}
-
 @media (max-width: 1200px) {
   .offer {
     background-size: cover;
@@ -1458,6 +1492,10 @@ img {
   margin-top: 0;
 }
 
+.card__ref {
+  cursor: pointer;
+}
+
 .card__image {
   position: relative;
 }
@@ -1712,11 +1750,15 @@ img {
 }
 
 @media (max-width: 768px) {
-  .steps-block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .steps__title {
+    font-size: 24px;
+    line-height: 48px;
+    margin: auto;
+    margin-bottom: 38px;
+  }
+  .steps__subtitle {
+    text-align: center;
+    font-size: 17px;
   }
 }
 
@@ -1726,6 +1768,12 @@ img {
   }
   .steps {
     padding: 10px 0px 26px 0;
+  }
+  .steps-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .steps__title {
     font-size: 19px;
@@ -2251,6 +2299,13 @@ img {
   }
   .interview-list {
     text-align: left;
+    width: 100%;
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .interview-list__text {
+    max-width: 310px;
   }
 }
 
@@ -2481,7 +2536,8 @@ img {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-bottom: 28px;
-  width: 190px;
+  width: 100%;
+  max-width: 220px;
 }
 
 .contacts-list__title {
@@ -2754,6 +2810,50 @@ img {
     font-size: 12px;
     line-height: 16px;
     margin-top: 20px;
+  }
+  .modal-dialog__contacts-phone {
+    font-size: 17px;
+  }
+}
+
+@media all and (orientation: landscape) {
+  .modal-dialog {
+    padding: 5px 20px;
+    max-height: 330px;
+  }
+  .modal-dialog__title {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    font-family: 'Museo Sans Cyrl Bold', sans-serif;
+    font-weight: 700;
+  }
+  .modal-dialog__subtitle {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 12px;
+  }
+  .modal-dialog__input {
+    padding: 10px 26px;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .modal-dialog__input:first-child {
+    margin-bottom: 10px;
+  }
+  .modal-dialog__button {
+    width: 100%;
+    margin-top: 6px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .modal-dialog__contacts {
+    display: block;
+    padding: 0px 10px;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 14px;
   }
   .modal-dialog__contacts-phone {
     font-size: 17px;
