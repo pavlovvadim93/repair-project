@@ -2615,10 +2615,10 @@ img {
     max-width: 550px;
   }
   .contacts-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-right: 5px;
+    width: 100%;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .contacts-list__title {
     font-size: 14px;
@@ -2877,7 +2877,8 @@ img {
 @media (max-width: 480px) {
   .modal-dialog {
     padding: 21px 30px;
-    max-height: 380px;
+    max-height: 390px;
+    max-width: 290px;
   }
   .modal-dialog__title {
     font-size: 14px;
@@ -2889,7 +2890,7 @@ img {
     margin-right: auto;
   }
   .modal-dialog__subtitle {
-    font-size: 12px;
+    font-size: 11px;
     margin-bottom: 10px;
   }
   .modal-dialog__input {

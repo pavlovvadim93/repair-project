@@ -2635,25 +2635,21 @@ img {
 }
 
 @media (max-width: 567px) {
+  .contacts {
+    padding: 48px 0px 31px 15px;
+  }
   .contacts-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .contacts {
-    padding: 48px 0px 31px 15px;
-  }
   .contacts__title {
-    text-align: left;
+    text-align: center;
     font-size: 18px;
     line-height: 22px;
     max-width: 350px;
     margin-bottom: 34px;
-  }
-  .contacts-list {
-    display: block;
-    margin-right: 5px;
   }
   .contacts-list__icon {
     margin-right: 10px;
@@ -2671,6 +2667,15 @@ img {
     font-size: 16px;
     line-height: 26px;
     padding-left: 30px;
+  }
+}
+
+@media (max-width: 420px) {
+  .contacts__title {
+    text-align: left;
+  }
+  .contacts-list {
+    margin: 0px;
   }
 }
 
