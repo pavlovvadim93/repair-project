@@ -6,11 +6,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url(/Users/vadimpavlov/Desktop/Practice/repair-project/src/sass/animate/_base.css);
-@import url(/Users/vadimpavlov/Desktop/Practice/repair-project/src/sass/animate/fading_entrances/fadeInLeft.css);
-@import url(/Users/vadimpavlov/Desktop/Practice/repair-project/src/sass/animate/fading_entrances/fadeInUp.css);
-@import url(/Users/vadimpavlov/Desktop/Practice/repair-project/src/sass/animate/specials/rollIn.css);
-@import url(/Users/vadimpavlov/Desktop/Practice/repair-project/src/sass/animate/specials/jackInTheBox.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -519,7 +514,7 @@ img {
 #offer-phone-error {
   position: absolute;
   top: 50px;
-  right: 60px;
+  right: 83px;
   font-size: 14px;
   color: red;
 }
@@ -558,7 +553,7 @@ img {
   }
   #offer-phone-error {
     top: 50px;
-    right: 20px;
+    right: 26px;
     font-size: 13px;
   }
 }
@@ -639,7 +634,20 @@ img {
   }
   #offer-phone-error {
     top: 125px;
-    left: 120px;
+    left: 115px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 427px) {
+  #brif-name-error {
+    top: 45px;
+    right: 83px;
+    font-size: 13px;
+  }
+  #brif-phone-error {
+    top: 45px;
+    right: 70px;
     font-size: 13px;
   }
 }
@@ -820,11 +828,6 @@ img {
   }
 }
 
-.wow {
-  -webkit-animation-name: "none" !important;
-          animation-name: "none" !important;
-}
-
 /* Стили для главного экрана */
 .hero {
   padding: 50px 0;
@@ -848,6 +851,7 @@ img {
   line-height: 55px;
   margin-left: -5px;
   margin-bottom: 17px;
+  color: #333333;
   font-family: 'Museo Sans Cyrl Bold', sans-serif;
   font-weight: 700;
 }
@@ -858,6 +862,7 @@ img {
   margin-bottom: 48px;
   font-family: 'Museo Sans Cyrl Bold', sans-serif;
   font-weight: 700;
+  color: #333333;
   display: inline-block;
 }
 
@@ -1057,9 +1062,9 @@ img {
 
 /* Стили для блока offer*/
 .offer {
-  background: url("../img/offer/offer-bg.png") no-repeat;
+  background: url("../img/offer/offer-bg.png") repeat-y;
   background-position: center right;
-  background-size: contain;
+  background-size: 50%, contain;
   position: relative;
   padding-top: 58px;
   padding-bottom: 90px;
@@ -1090,6 +1095,7 @@ img {
   line-height: 35px;
   margin-bottom: 19px;
   text-align: left;
+  color: #333333;
 }
 
 .offer-block__subtitle {
@@ -1112,6 +1118,7 @@ img {
   margin-bottom: 26px;
   font-family: 'Museo Sans Cyrl Bold', sans-serif;
   font-weight: 700;
+  color: #333333;
 }
 
 .offer-block__massege {
@@ -1371,6 +1378,7 @@ img {
 .portfolio__title {
   font-size: 30px;
   line-height: 45px;
+  color: #333333;
   max-width: 800px;
   margin-bottom: 90px;
   margin-left: auto;
@@ -2214,6 +2222,7 @@ img {
   margin-bottom: 46px;
   font-family: 'Museo Sans Cyrl Bold', sans-serif;
   font-weight: 700;
+  color: #333333;
 }
 
 .shape__subtitle {
@@ -2489,10 +2498,10 @@ img {
 }
 
 .contacts {
-  padding-top: 39px;
+  padding-top: 70px;
   position: absolute;
   top: 0;
-  right: 220px;
+  right: 240px;
 }
 
 .contacts__title {
@@ -2686,12 +2695,13 @@ img {
   position: relative;
   margin: auto;
   max-width: 450px;
-  width: 90%;
+  width: 100%;
   height: 100%;
   min-width: 200px;
+  max-width: 460px;
   max-height: 530px;
   background-color: #ffffff;
-  padding: 41px 79px;
+  padding: 41px 74px;
   text-align: center;
 }
 
@@ -2703,6 +2713,8 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+  border: 0 none;
+  background-color: #ffffff;
 }
 
 .modal-dialog__close:hover {
@@ -2710,24 +2722,26 @@ img {
 }
 
 .modal-dialog__title {
-  font-size: 17px;
-  line-height: 27px;
+  font-size: 22px;
+  line-height: 30px;
   margin-bottom: 25px;
   font-family: 'Museo Sans Cyrl Bold', sans-serif;
   font-weight: 700;
+  color: #333333;
 }
 
 .modal-dialog__subtitle {
   display: block;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 35px;
   margin-bottom: 26px;
+  color: #333333;
 }
 
 .modal-dialog__input {
   width: 100%;
   padding: 13px 26px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 24px;
   margin-bottom: 11px;
 }
@@ -2756,7 +2770,7 @@ img {
 .modal-dialog__contacts {
   display: block;
   padding: 0px 27px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 16px;
   margin-top: 23px;
 }
@@ -2854,6 +2868,46 @@ img {
     font-size: 12px;
     line-height: 16px;
     margin-top: 14px;
+  }
+  .modal-dialog__contacts-phone {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 460px) {
+  .modal-dialog {
+    padding: 21px 30px;
+    max-height: 380px;
+  }
+  .modal-dialog__title {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 12px;
+    width: 100%;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .modal-dialog__subtitle {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .modal-dialog__input {
+    padding: 10px 26px;
+    font-size: 11px;
+    line-height: 24px;
+  }
+  .modal-dialog__button {
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .modal-dialog__contacts {
+    display: block;
+    padding: 0px 10px;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 15px;
   }
   .modal-dialog__contacts-phone {
     font-size: 17px;
