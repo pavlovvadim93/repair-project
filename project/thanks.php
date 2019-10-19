@@ -9,26 +9,21 @@
     <title>Ремонт квартир</title>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="nav">
         <div class="container">
-            <div class="navbar-block">
-                <div class="navbar-block__logo wow flip" data-wow-delay="0.1s">
+            <div class="nav-block">
+                <div class="nav-block__logo wow flip" data-wow-delay="0.1s">
                     <a href="index.html">
                         <img src="img/logo.png" alt="">
                     </a>
                 </div>
                 <!-- /.navbar-block__logo -->
-                <div class="navbar-block__info">
-                    <div class="navbar-block__contacts">
-                        <span class="navbar-block__address">Калуга, Москва, МО</span>
-                        <a href="tel:+7(495)42-251-31" class="navbar-block__phone">+7 (495) 42-251-31</a>
+                <div class="nav-block__info">
+                    <div class="nav-block__contacts">
+                        <span class="nav-block__address">Калуга, Москва, МО</span>
+                        <a href="tel:+7(495)42-251-31" class="nav-block__phone">+7 (495) 42-251-31</a>
                     </div>
                     <!-- /.navbar__contacts -->
-                    <div class="btn">
-                        <a href="#" class="button navbar-block__button" id="button">Перезвоните мне</a>
-                    </div>
-                    <!-- /.button -->
-                   <!--  <button class="button navbar__button">Перезвоните мне</button> -->
                 </div>
                 <!-- /.navbar_info -->
             </div>

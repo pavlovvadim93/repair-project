@@ -49,19 +49,19 @@
                             с гарантией качества, прописанной в договоре
                         </span>
                         <ul class="hero-list">
-                            <li class="hero-list__item wow fadeInLeft" data-wow-delay="0.3s">
+                            <li class="hero-list__item">
                                 <div class="hero-list__image">
                                     <img src="img/hero/clock.png" alt="clock">
                                 </div>
                                 <span class="hero-list__text">Точно соблюдаем сроки</span>
                             </li>
-                            <li class="hero-list__item wow fadeInLeft" data-wow-delay="0.5s">
+                            <li class="hero-list__item">
                                 <div class="hero-list__image">
                                     <img src="img/hero/calculator.png" alt="calculator">
                                 </div>
                                 <span class="hero-list__text">Рассчитаем смету на работы<br>и материалы в день обращения</span>
                             </li>
-                            <li class="hero-list__item wow fadeInLeft" data-wow-delay="0.7s">
+                            <li class="hero-list__item">
                                 <div class="hero-list__image">
                                     <img src="img/hero/paint-board.png" alt="paint-board">
                                 </div>
@@ -89,10 +89,10 @@
                     <!-- /.section-subtitle -->
                     <form action="mail.php" method="POST" class="form offer-block__form" id="offer-form">
                         <div class="form offer-block__window">
-                            <input type="text" name="username" class="input offer-block__input wow rollIn" id="offer-name" data-wow-delay="0.2s" placeholder="Ваше имя">
-                            <input type="tel" name="phone" class="input offer-block__input wow rollIn" id="offer-phone" data-wow-delay="0.4s" placeholder="Ваш телефон">
+                            <input type="text" name="username" class="input offer-block__input" id="offer-name" placeholder="Ваше имя">
+                            <input type="tel" name="phone" class="input offer-block__input" id="offer-phone" placeholder="Ваш телефон">
                         </div>
-                        <button class="button offer-block__button wow jackInTheBox" data-wow-delay="0.7s">Получить бесплатный дизайн-проект</button>
+                        <button class="button offer-block__button">Получить бесплатный дизайн-проект</button>
                     </form>
                     <div class="offer-block__info">
                         <div class="offer-block__info-description">
@@ -141,7 +141,7 @@
                 <span class="section-subtitle price__subtitle">Прайс на наши услуги</span>
                 <!-- /.section-subtitle price__subtitle -->
                 <div class="cards">
-                    <div class="card price__card wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="card price__card">
                         <a href="#" class="card__ref">
                             <div class="card__image">
                                 <img src="img/price/bathroom.jpg" class="card__img" alt="">
@@ -157,7 +157,7 @@
                         <!-- /.card__text -->
                     </div>
                     <!-- /.card -->
-                    <div class="card price__card wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="card price__card">
                         <a href="#" class="card__ref">
                             <div class="card__image">
                                 <img src="img/price/living.jpg" class="card__img" alt="">
@@ -173,7 +173,7 @@
                         <!-- /.card__text -->
                     </div>
                     <!-- /.card -->
-                    <div class="card price__card wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="card price__card">
                         <a href="#" class="card__ref">
                             <div class="card__image">
                                 <img src="img/price/office.jpg" class="card__img" alt="">
@@ -189,7 +189,7 @@
                         <!-- /.card__text -->
                     </div>
                     <!-- /.card -->
-                    <div class="card price__card wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="card price__card">
                         <a href="#" class="card__ref">
                             <div class="card__image">
                                 <img src="img/price/buildings.jpg" class="card__img" alt="">
@@ -205,7 +205,7 @@
                         <!-- /.card__text -->
                     </div>
                     <!-- /.card -->
-                    <div class="card price__card wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="card price__card">
                         <a href="#" class="card__ref">
                             <div class="card__image">
                                 <img src="img/price/kitchen.jpg" class="card__img" alt="">
@@ -221,7 +221,7 @@
                         <!-- /.card__text -->
                     </div>
                     <!-- /.card -->
-                    <div class="card price__card wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="card price__card">
                         <a href="#" class="card__ref">
                             <div class="card__image">
                                 <img src="img/price/house.jpg" class="card__img" alt="">
@@ -482,13 +482,12 @@
         <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
+
     <!-- Кнопка Наверх -->
     <div class="button-main" id="upbutton">
         <button class="back-button">Наверх</button>
     </div>
     
-
-    <!-- <script src="js/main.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/modal.js"></script>
@@ -502,12 +501,5 @@
     <script src="js/validate.js"></script>
     <script src="js/map.js"></script>
 
- 
-
-    
-    <script>
-        /* Инициализация WOW.js  */
-        /* new WOW().init(); */
-    </script>
 </body>
 </html>
