@@ -2203,7 +2203,7 @@ img {
 .interview-list__counter {
   display: inline-block;
   text-align: center;
-  line-height: 35px;
+  line-height: 32px;
   font-size: 14px;
   width: 35px;
   height: 35px;
@@ -2566,13 +2566,13 @@ img {
 
 .contacts-list__phone {
   display: inline-block;
-  color: #333333;
   font-size: 16px;
   line-height: 26px;
   text-decoration: none;
   padding-left: 40px;
   font-family: 'Museo Sans Cyrl Bold', sans-serif;
   font-weight: 700;
+  color: #000000;
 }
 
 @media (max-width: 1200px) {
